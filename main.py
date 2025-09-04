@@ -7,8 +7,8 @@ from agentturing.utils.sanitize_output import extract_steps
 
 print("Bootstrapping pipeline (this happens once)...")
 GRAPH = build_graph()
-INPUT_GUARD = make_input_guard()
-OUTPUT_GUARD = make_output_guard()
+# INPUT_GUARD = make_input_guard()
+# OUTPUT_GUARD = make_output_guard()
 print("Pipeline ready. Enter questions (type 'exit' to quit).")
 
 
@@ -33,7 +33,7 @@ def run_query(question: str):
     # except Exception:
     #     safe_answer = "The generated answer did not meet safety requirements. Please rephrase the question."
 
-    return result['answer'][0]['generated_text'].partition("Answer step-by-step:")[2]
+    return result['answer'][0]['generated_text'].partition("Answer101:")[2]
 
 
 if __name__ == "__main__":

@@ -30,10 +30,10 @@ def get_llm():
         tokenizer=tok,
         device_map="auto",
         dtype=torch.float16,
-        max_new_tokens=192,   # reduce from 512
-        temperature=0.0,
+        max_new_tokens=256,
+        temperature=0.01,
         top_k=1,
         top_p=1.0,
         do_sample=False,
-        repetition_penalty=1.1,
+        repetition_penalty=1.2,
     )

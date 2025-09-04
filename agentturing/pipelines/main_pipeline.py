@@ -12,7 +12,7 @@ llm = get_llm()
 
 prompt_template = ChatPromptTemplate([
     ("system", SYSTEM_PROMPT),
-    ("user", "Context:\n{context}\n\nQuestion:\n{question}\n\nAnswer step-by-step:")
+    ("user", "Context:\n{context}\n\nUser's Question:{question}\n\n\nAnswer101:")
 ])
 
 def retrieve(state: State):
