@@ -28,7 +28,6 @@ def make_input_guard():
     """Create an input guard and return a callable that outputs a string."""
     guard = (
         Guard()
-        .use(GibberishText(threshold=0.55, validation_method="sentence", on_fail=OnFailAction.EXCEPTION))
         .use(ToxicLanguage(threshold=0.7, validation_method="sentence", on_fail=OnFailAction.EXCEPTION))
         .use(DetectPII(pii_entities=["EMAIL_ADDRESS", "PHONE_NUMBER"], on_fail=OnFailAction.FILTER))
     )

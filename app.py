@@ -1,37 +1,56 @@
-import streamlit as st
+import os
+from fastapi import FastAPI, HTTPException
+from pydantic import BaseModel
 
+os.environ["TF_CPP_MIN_LOG_LEVEL"] = "0"
+
+from agentturing.guardrails.setup import make_output_guard, make_input_guard
 from agentturing.pipelines.main_pipeline import build_graph
 
-if "graph" not in st.session_state:
-    st.session_state.graph = build_graph()
+print("Bootstrapping pipeline (this happens once)...")
+GRAPH = build_graph()
+INPUT_GUARD = make_input_guard()
+OUTPUT_GUARD = make_output_guard()
+print("Pipeline ready.")
 
-if "history" not in st.session_state:
-    st.session_state.history = []
+# -------------------------------
+# FastAPI setup
+# -------------------------------
+app = FastAPI(title="Math Tutor API", version="1.0")
 
-st.set_page_config(page_title="Math Tutor Bot", page_icon="📐", layout="wide")
+class QueryRequest(BaseModel):
+    question: str
 
-st.title("📐 Math Tutor Bot")
-st.caption("An Agentic-RAG powered professor that solves math problems step by step.")
+@app.post("/ask")
+async def ask_math(request: QueryRequest):
+    question = request.question.strip()
+    print(question)
+    if not question:
+        raise HTTPException(status_code=400, detail="Question cannot be empty")
 
-# Chat display
-for role, message in st.session_state.history:
-    if role == "user":
-        st.chat_message("user").markdown(message)
-    else:
-        st.chat_message("assistant").markdown(message)
-
-# Input box
-if prompt := st.chat_input("Ask me a math question..."):
-    # Append user message to chat history
-    st.session_state.history.append(("user", prompt))
-    st.chat_message("user").markdown(prompt)
-
-    # Run pipeline
+    # 1) Input guard
     try:
-        result = st.session_state.graph.invoke({"question": prompt})
-        answer = result['answer'][0]['generated_text'].partition("Answer101:")[2]
+        validated_question = INPUT_GUARD(question)
     except Exception as e:
-        answer = f"⚠️ Error: {str(e)}"
+        return {
+            "answer": "This assistant only handles mathematics questions. Please provide a math-related query.",
+            "error": f"Input guard triggered: {str(e)}"
+        }
+    # 2) Run pipeline
+    try:
+        state = {"question": validated_question}
+        result = GRAPH.invoke(state)
 
-    st.session_state.history.append(("assistant", answer))
-    st.chat_message("assistant").markdown(answer)
+        raw_answer = result["answer"][0]["generated_text"]
+        answer = raw_answer.partition("Answer101:")[2].strip() or raw_answer
+
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Pipeline error: {str(e)}")
+
+    # 3) Output guard
+    try:
+        safe_answer = OUTPUT_GUARD(answer)
+    except Exception:
+        safe_answer = "The generated answer did not meet safety requirements. Please rephrase the question."
+
+    return {"question": question, "answer": safe_answer}
