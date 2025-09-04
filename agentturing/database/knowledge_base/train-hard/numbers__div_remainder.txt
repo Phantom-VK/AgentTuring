@@ -1,0 +1,6 @@
+What is the remainder when 318584 is divided by 819?
+812
+What is the remainder when 2079580 is divided by 1154?
+72
+What is the remainder when 866197 is divided by 50?
+47

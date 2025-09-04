@@ -1,0 +1,6 @@
+Let t(q) = -929*q**2. Let z(n) = 130*n - 135. What is z(t(c))?
+-120770*c**2 - 135
+Let b(d) = 4*d**2 + 3*d. Let y(j) = 6*j + 303. Let x be y(-44). Let v(g) = 7*g**2 + 26. Let s(p) = p**2 + 4. Let q(c) = x*s(c) - 6*v(c). Calculate b(q(f)).
+36*f**4 - 9*f**2
+Let q(y) = -36974178*y. Let v(x) = x**2. What is v(q(d))?
+1367089838775684*d**2

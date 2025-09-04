@@ -1,0 +1,20 @@
+Let t(v) = -57753*v. Let r(k) = k**2 + 135. Give t(r(u)).
+-57753*u**2 - 7796655
+Let t(a) = -14880469*a. Let c(r) = -2*r**2. Give t(c(g)).
+29760938*g**2
+Let m(s) be the third derivative of s**4 - 372*s**2. Let n(h) = 3 - 6*h**2. Calculate m(n(x)).
+72 - 144*x**2
+Let z(g) = -5083655*g**2. Let p(f) = 4*f. Determine p(z(v)).
+-20334620*v**2
+Let y(z) be the second derivative of 2*z**3/3 - 1102*z. Let m(a) = -12*a**2 - 3. Give y(m(b)).
+-48*b**2 - 12
+Let l(i) be the second derivative of 0*i**2 + 5/6*i**3 + 0 - 74*i. Let g(o) = -26*o. What is g(l(j))?
+-130*j
+Let u(g) = -g. Let p(c) = -93*c + 280*c - 79*c - 95*c - 9*c**2. Give p(u(m)).
+-9*m**2 - 13*m
+Let d(r) = 218*r - 3 - 354*r + 298*r. Let v(s) = -s. Determine v(d(x)).
+3 - 162*x
+Let p(k) = -4*k**2. Let d(v) = v - 27645. What is d(p(c))?
+-4*c**2 - 27645
+Let k(h) be the first derivative of 1099 - h**2/2. Let m(a) = -3063*a. Give k(m(n)).
+3063*n

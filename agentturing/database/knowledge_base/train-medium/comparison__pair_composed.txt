@@ -1,0 +1,6 @@
+Let x = -261 - -304. Is -0.1 less than or equal to x?
+True
+Let m be (1/4)/(22/4136). Which is greater: 52 or m?
+52
+Suppose 0 = 4*r - 5*r + 7. Let c be (-1)/6 - (0 + r/30). Which is bigger: c or 10?
+10

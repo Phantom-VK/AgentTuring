@@ -1,0 +1,6 @@
+Let h = -2 + 1.6. Let r = h + 0.8. Let f = -16/5 - -82/35. Sort -0.4, r, f.
+f, -0.4, r
+Let o = 0.2 + 1.8. Let z = -75/68 - -6/17. Put z, o, -1/4 in decreasing order.
+o, -1/4, z
+Let d = -0.58 - 1.42. Put 2/5, d, 2/9 in increasing order.
+d, 2/9, 2/5

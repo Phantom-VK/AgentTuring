@@ -1,0 +1,20 @@
+Which is the third biggest value?  (a) 0.5  (b) -2/25  (c) 2  (d) 15  (e) 5/2  (f) 0.1  (g) 0.3  (h) -5/2  (i) -2  (j) -341
+c
+What is the eighth biggest value in -0.3, -15316, -3, -8/19, 2/7, 1, 0, 3, 6?
+-3
+Which is the third biggest value?  (a) -4  (b) -323  (c) 1  (d) -8/3  (e) -15/2  (f) 60  (g) -3  (h) 0  (i) 3/5
+i
+What is the seventh smallest value in -0.038, -1, 0.3, -0.9, 1, -6, 24/13, 4, -3, 1/5?
+0.3
+Which is the smallest value?  (a) 16/7  (b) -2/5  (c) 16  (d) 0.9  (e) 0.3  (f) 4  (g) -7  (h) 399  (i) 2
+g
+What is the third biggest value in 453, 4, -3549/4, -1/2, 0.52, 1, -0.3, -1/7, 4/7?
+1
+What is the second smallest value in 1, -2, 9.8, -2/21, 30, 1/11, -0.012, 0.5, -1/5, -2/3?
+-2/3
+What is the eighth smallest value in -2, -5/262, 2/3, 5, -0.23, -1.8, 0.2, 3, -8, -20?
+2/3
+What is the fifth smallest value in 0.6, 1.92, 0.7, -3, -2/1211, -0.3, -2, -4, 0.1?
+-2/1211
+Which is the tenth smallest value?  (a) 2  (b) -4  (c) -1/3  (d) -2/9  (e) -0.5  (f) 0.049  (g) -7  (h) 5  (i) -8  (j) 5975
+j

@@ -1,0 +1,6 @@
+Suppose -778 = 2*d - 796. Find the second derivative of -104*s**5 + 8 + 59*s - d - 1 + 1 wrt s.
+-2080*s**3
+Let n(x) be the third derivative of 0 + 77/12*x**4 + 25/2*x**3 + 17*x**2 + 0*x. Differentiate n(m) with respect to m.
+154
+Let g = 4 - 0. Suppose -3 + 17 = 5*v + 2*b, -4*v + b + 6 = 0. Find the third derivative of 6*x**4 + 7*x**g + 0*x**2 + 4*x**v wrt x.
+312*x

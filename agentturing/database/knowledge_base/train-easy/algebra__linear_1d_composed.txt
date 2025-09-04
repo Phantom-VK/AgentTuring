@@ -1,0 +1,6 @@
+Let a be ((-32)/24)/((-4)/30). Let b(u) = 12 - u. Let y be b(a). Suppose -y*t = 3*t - 10. Solve 3 - 1 = t*f for f.
+1
+Let b = -16 - -22. Let f(g) = -g**2 + 6*g + 4. Let o be f(b). Solve -2 + 10 = o*r for r.
+2
+Let b(h) = -2*h - 3. Let a be b(-3). Suppose 2 = -4*p + 38. Let s = p + -4. Solve -2*u + a = -s*u for u.
+-1

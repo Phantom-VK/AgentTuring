@@ -1,0 +1,6 @@
+List the prime factors of 41223.
+3, 7, 13, 151
+List the prime factors of 1304.
+2, 163
+List the prime factors of 4277.
+7, 13, 47

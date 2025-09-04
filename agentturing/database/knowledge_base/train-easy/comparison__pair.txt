@@ -1,0 +1,6 @@
+Is -327 less than -354?
+False
+Do 1148 and 1148 have the same value?
+True
+Is 8 greater than -0.96?
+True

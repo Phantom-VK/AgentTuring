@@ -1,0 +1,20 @@
+What is the common denominator of ((-14)/72)/(3/63) and 5 - (68/80 - (-8)/40)?
+60
+Calculate the least common multiple of 6 and 0 - -1043 - (258 - 259).
+1044
+Let c = 141 - 136. What is the lowest common multiple of (3 - (c + 4))*-3 and 10?
+90
+Suppose -3*r + 33 = 2*f - 8*r, -3 = r. Let y(l) = 2*l**2 + 8*l + 6. Calculate the least common multiple of f and y(5).
+288
+Let g(s) = -s - 7. Let m be g(-12). Suppose -2*d - 4*f = -108, -4*d + m*f + 8 = -221. Calculate the common denominator of -75/2 and 243/d - 28/(-98).
+8
+Suppose 4*w - 213 + 57 = -2*w. What is the lowest common multiple of w and 598?
+598
+Let q = 1679 + -1587. What is the smallest common multiple of q and 414?
+828
+Suppose 2814 + 3226 + 4283 = 31*b. Calculate the least common multiple of b and 222.
+666
+Suppose -15*u + 20 = -5*u. Calculate the common denominator of 41/8 and 36/48*u/(216/262).
+72
+Let a = -225 + 343. Let y = a + -106. Calculate the least common multiple of y and 54.
+108

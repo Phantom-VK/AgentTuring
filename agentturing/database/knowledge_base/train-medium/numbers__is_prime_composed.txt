@@ -1,0 +1,6 @@
+Suppose 3*m - 14753 - 21676 = 0. Is m a prime number?
+True
+Suppose 0 = 4*t + 4*l - 528, 3*l = 8*l + 15. Suppose -t*f = -140*f + 17845. Is f a composite number?
+True
+Let n(x) = 350*x**2 - 48*x - 3. Is n(8) composite?
+False

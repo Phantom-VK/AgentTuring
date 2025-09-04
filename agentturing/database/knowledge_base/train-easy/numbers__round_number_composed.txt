@@ -1,0 +1,6 @@
+Let t(i) = i**3 + 11*i**2 + 11*i + 12. Let w be t(-10). Suppose w*k = 6*k - 3000000. Round k to the nearest 100000.
+800000
+Suppose -20770 = -5*x + 5*l, 5*x - 3*l = 3*x + 8312. What is x rounded to the nearest 100?
+4200
+Suppose 0*l - 7 = l. Let d(y) = -y**3 + 3*y**2 - 7*y + 1. Let f be d(l). Round f to the nearest 100.
+500

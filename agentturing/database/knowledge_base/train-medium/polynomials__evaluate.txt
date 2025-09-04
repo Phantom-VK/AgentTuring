@@ -1,0 +1,6 @@
+Let n(v) = -21*v - 55. Calculate n(-21).
+386
+Let h(f) = 578 - 148*f. What is h(5)?
+-162
+Let u(h) = 5*h**2 + 8*h + 9. What is u(-2)?
+13

@@ -1,0 +1,6 @@
+Suppose 2*r + 62500 = 5*l, -18*r = -23*r - 25. What is the units digit of l?
+8
+Let v = 955 + -515. Suppose 27*o - v = 22*o. Suppose -384 + o = -4*p. What is the units digit of p?
+4
+Suppose 9*s = 1915 - 160. Suppose s = v - 36. Let y = v - 97. What is the units digit of y?
+4

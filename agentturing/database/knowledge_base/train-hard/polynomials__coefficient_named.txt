@@ -1,0 +1,6 @@
+Rearrange (2*v - 3*v**2 - 2*v)*(2391 - 7*v**2 + 0*v**2 - 1585) to the form y*v + k + q*v**3 + b*v**4 + u*v**2 and give b.
+21
+Rearrange -2*w + 32669*w**2 + 32660*w**2 + 5*w**4 - 65332*w**2 - 1 - w**3 to q*w + u*w**2 + d + h*w**3 + i*w**4 and give q.
+-2
+Express -2*h**4 + 10*h**4 + 13*h**4 + (19*h**2 - 3*h**3 - 14*h**2 + 5*h**3)*(32 + 43*h - 32) as z*h**4 + w + t*h + r*h**2 + l*h**3 and give z.
+107

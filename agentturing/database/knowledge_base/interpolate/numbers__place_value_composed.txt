@@ -1,0 +1,20 @@
+Let o be 1*(19 + 5/(-5)). Suppose -20*n - 12 = -o*n. What is the units digit of (18/4)/(n/(-108))?
+1
+Suppose 0 = -6*h - 4*h + 18710. What is the hundreds digit of (-1)/(-4) - (h/(-4) - -6)?
+4
+Let d(y) = 15*y**3 + 26*y**2 - 59*y - 8. What is the units digit of d(7)?
+8
+Let g be 24/144 - 22/(-12). Suppose 0 = -g*b - 7*b + 900. What is the tens digit of b?
+0
+Suppose -k + 9*k - 1808 = 0. Suppose b + 2*g - k = 211, 3*b + 3*g = 1296. What is the tens digit of b?
+2
+Suppose l - 36 = 2*l + 3*h, 0 = -5*l - 2*h - 206. Let d = 42 + l. Suppose d = 5*q - 84 - 191. What is the units digit of q?
+5
+Let o(g) = g**3 + 9*g**2 + 9*g + 12. Let k be o(-8). Suppose 8 + 0 = -k*w. What is the tens digit of (-86)/w - (-5 - -2)?
+4
+Let m = 42 + -39. Suppose -5*o = -5*q + 4*q - 13, -m*q = -3*o + 15. Suppose -o*k + 70 + 6 = 0. What is the units digit of k?
+8
+Suppose -d + 26 = 2*w, w - 5 = -3*d + 13. Suppose -4*m + i = 211 - w, -4*m - 198 = -2*i. Let f = m - -55. What is the units digit of f?
+5
+Let f be (-66)/(-154) + 11/7. Suppose 2*p + f*o + 50 - 466 = 0, 4*p - 839 = 3*o. What is the hundreds digit of p?
+2

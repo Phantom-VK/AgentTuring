@@ -1,0 +1,6 @@
+In base 16, what is -8c - 5a?
+-e6
+In base 16, what is 460d - -c7?
+46d4
+In base 16, what is cbcc + 17?
+cbe3

@@ -1,0 +1,6 @@
+Does 22 divide 6336?
+True
+Is 34 a factor of 10676?
+True
+Does 12 divide 1410?
+False

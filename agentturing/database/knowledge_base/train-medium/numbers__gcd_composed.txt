@@ -1,0 +1,6 @@
+Suppose -329 - 1231 = -10*x. Calculate the greatest common divisor of x and 36.
+12
+Let b be (84/18)/(16/144). What is the greatest common divisor of 980 and b?
+14
+Suppose -2*f = -3*h - 25 - 32, 0 = 2*h + 6. Let t = -5 + 5. Suppose t = -3*u + 6*u - 48. What is the highest common factor of u and f?
+8

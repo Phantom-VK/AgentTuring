@@ -1,0 +1,6 @@
+What is the first derivative of -35089*h - 68170?
+-35089
+What is the third derivative of -2*d**4*o + 2*d**4 + 351*d**3*o + d**3 + 2*d**2*o + 51*d*o + 149 wrt d?
+-48*d*o + 48*d + 2106*o + 6
+Find the third derivative of -186*l**4*p**3 - 265*l**4*t**2 - 1339*l**2*p**3*t + l**2*t**2 + 8*p**3*t**2 wrt l.
+-4464*l*p**3 - 6360*l*t**2

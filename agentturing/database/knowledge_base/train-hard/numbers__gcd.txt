@@ -1,0 +1,6 @@
+Calculate the highest common divisor of 4501772 and 52217.
+1111
+Calculate the highest common factor of 106 and 119848741.
+53
+What is the greatest common factor of 1155434 and 7?
+7

@@ -1,0 +1,20 @@
+Let f(x) = x**2 + 7*x + 78. Let w be f(-36). Let d = w - 681. Does 53 divide d?
+False
+Suppose 0 = -0*j + 2*j + f - 18245, 4*j + 3*f - 36487 = 0. Is 39 a factor of j/18 - 14/(-126)?
+True
+Suppose 0 = -9*p + 186 - 1842. Let l = p + 224. Is l a multiple of 19?
+False
+Is 3504 - 6/10*((-72)/12 - -11) a multiple of 49?
+False
+Let a(x) = -x**3 + 12*x**2 + 2*x + 1. Let r be a(11). Let m = r + 72. Is 54 a factor of m?
+True
+Let l(q) = 14 - 105*q. Let z(k) = 2*k**2 + 30*k - 2. Let n be z(-15). Does 28 divide l(n)?
+True
+Is (1*3/9*15)/(3/789) a multiple of 44?
+False
+Let f = -472 - -720. Suppose 9*k - 13*k + f = 0. Is k a multiple of 13?
+False
+Is 9 a factor of ((4 - -21067) + -5)/6?
+False
+Suppose -3*y + 115*j = 112*j - 10887, -3*y - 3*j = -10899. Does 30 divide y?
+False

@@ -1,0 +1,20 @@
+Three letters picked without replacement from {b: 5, j: 4, t: 4, v: 1, m: 4}. What is prob of sequence bjm?
+5/306
+What is prob of sequence et when two letters picked without replacement from qrrbrrgrtebg?
+1/132
+Three letters picked without replacement from ddgdggdg. Give prob of sequence ggd.
+1/7
+Two letters picked without replacement from zi. Give prob of sequence zi.
+1/2
+Two letters picked without replacement from {t: 11, p: 8}. Give prob of sequence pt.
+44/171
+Four letters picked without replacement from {i: 3, q: 10, c: 1}. Give prob of sequence iiqq.
+45/2002
+What is prob of sequence lv when two letters picked without replacement from voululli?
+3/56
+Three letters picked without replacement from eesuuusuesooeuo. Give prob of sequence ose.
+6/455
+Four letters picked without replacement from {q: 11, r: 4}. Give prob of sequence qqqr.
+11/91
+What is prob of sequence pxl when three letters picked without replacement from {x: 2, g: 3, y: 1, l: 4, d: 2, p: 7}?
+28/2907

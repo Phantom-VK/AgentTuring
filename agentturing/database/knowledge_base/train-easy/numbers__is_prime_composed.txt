@@ -1,0 +1,6 @@
+Let f = -13 - -8. Let t be 1 - 1 - 0 - f. Suppose d + u + 4*u = 97, t*u + 134 = 2*d. Is d a prime number?
+False
+Suppose o - 2*o = -9. Let c be (-2)/o + 492/27. Let p = 31 + c. Is p prime?
+False
+Suppose 0*t - t + 3 = 0. Suppose t*q = 4*m + 69, 5*q + 77 = m - 5*m. Let a = -11 - m. Is a a composite number?
+False

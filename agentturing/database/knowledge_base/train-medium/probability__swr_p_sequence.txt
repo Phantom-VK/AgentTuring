@@ -1,0 +1,6 @@
+Calculate prob of sequence xe when two letters picked without replacement from uuxddsuuedsxe.
+1/39
+Four letters picked without replacement from qvvvvqoqoq. What is prob of sequence vvoo?
+1/210
+What is prob of sequence cmm when three letters picked without replacement from {c: 4, m: 6}?
+1/6

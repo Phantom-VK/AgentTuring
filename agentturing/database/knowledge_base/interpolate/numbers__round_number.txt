@@ -1,0 +1,20 @@
+What is 39507989 rounded to the nearest ten thousand?
+39510000
+Round -0.00073252529 to six decimal places.
+-0.000733
+Round 6232870.7 to the nearest 10000.
+6230000
+Round -0.00121391549 to 5 decimal places.
+-0.00121
+What is -4.5088518 rounded to three decimal places?
+-4.509
+Round -0.00123153556 to six dps.
+-0.001232
+Round 158184.226 to the nearest one hundred.
+158200
+What is 10.3133065 rounded to two decimal places?
+10.31
+Round -0.0000034778021 to seven decimal places.
+-0.0000035
+What is -0.0005254625 rounded to 4 decimal places?
+-0.0005

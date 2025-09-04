@@ -1,0 +1,6 @@
+Calculate the remainder when 217 is divided by 53.
+5
+What is the remainder when 2536 is divided by 54?
+52
+Calculate the remainder when 354 is divided by 12.
+6

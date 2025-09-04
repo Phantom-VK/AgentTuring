@@ -1,0 +1,6 @@
+What is -157444 (base 8) in base 10?
+-57124
+dcbc (base 16) to base 14
+16844
+143 (base 14) to base 2
+11111111

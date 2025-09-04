@@ -1,0 +1,6 @@
+Solve -5*f - 2*t = 17, 3*t = 2*f - 0*t + 22 for f.
+-5
+Solve -14*t = -12*t + 2*z - 2, 4*z = -3*t + 8 for t.
+-4
+Solve 0 = -3*g - h - 8, 5*h = h + 4 for g.
+-3

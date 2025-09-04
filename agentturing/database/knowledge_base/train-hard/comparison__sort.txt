@@ -1,0 +1,6 @@
+Put -1652, 1, 5, 0, 12, -1 in descending order.
+12, 5, 1, 0, -1, -1652
+Sort 374.1, 1/8, 0.0882 in decreasing order.
+374.1, 1/8, 0.0882
+Put -6022, -1, 27910 in decreasing order.
+27910, -1, -6022

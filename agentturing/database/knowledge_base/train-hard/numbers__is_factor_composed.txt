@@ -1,0 +1,6 @@
+Let x be ((-3)/(-9))/(4/12). Suppose 2*s + 0*s + 2*k = 12, -k + 3 = 0. Suppose s*z + 12 = r, z - 17 + x = -r. Is r a multiple of 15?
+True
+Suppose -3*u + 5 + 2 = k, 5*u - 5 = -5*k. Let s(j) = 8*j**2 + j - 2. Let o be s(u). Let p = o - -23. Is p a multiple of 24?
+True
+Let r = 27873 + 25508. Is 86 a factor of r?
+False

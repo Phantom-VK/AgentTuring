@@ -1,0 +1,20 @@
+Is 6 a factor of 27945883?
+False
+Is 38020584 a multiple of 409?
+False
+Is 9 a factor of 25795712?
+False
+Is 627 a factor of 20934728?
+False
+Is 676 a factor of 44415366?
+False
+Does 96 divide 17267232?
+True
+Is 8852175 a multiple of 314?
+False
+Does 5 divide 2935353?
+False
+Is 38029635 a multiple of 441?
+True
+Does 193 divide 52705351?
+False

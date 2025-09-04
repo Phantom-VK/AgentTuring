@@ -1,0 +1,20 @@
+Suppose 11*q = -6*q + 16405. Suppose 0 = -0*g + 5*g - q. What is the remainder when g is divided by 49?
+46
+Let l(p) = 37*p - 1722. Let w(n) = n - 3. What is the remainder when l(47) is divided by w(6)?
+2
+Calculate the remainder when 5 - (-1122)/(-4 - -7) is divided by 6.
+1
+Suppose -s = 2, 5*k - 2*s + 15 + 1 = 0. Let z(x) = x**3 + 4*x**2 - 3*x + 5. What is the remainder when -1 - -6 - (1 + -62) is divided by z(k)?
+15
+Suppose 4*w - 70 = -v - 4*v, w = -3*v + 42. Let z be 128/7 - (-54)/(-189). Suppose z*g + 52 = 20*g. Calculate the remainder when g is divided by v.
+12
+Let k(q) = q**3 + 31*q**2 + 33*q + 162. What is the remainder when 4245 is divided by k(-30)?
+69
+Let a = -22 + 226. Calculate the remainder when 417 is divided by a.
+9
+Let c = -1517 + 1636. What is the remainder when c is divided by 24?
+23
+Let g = -103 + 133. Suppose 4*z + 88 = 5*b - 4*b, 3*z - 88 = -b. What is the remainder when b is divided by g?
+28
+Let l(f) = 5*f**2 + 3*f + 2. What is the remainder when l(3) is divided by 35?
+21

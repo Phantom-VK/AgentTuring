@@ -1,2 +1,3 @@
 /.idea
-/knowledge_base
+/.env
+/agentturing/database/qdrantdb/

@@ -1,0 +1,6 @@
+Let y = 56 + -62. Let m(a) be the first derivative of 6*a + 1/2*a**2 + 13. What is m(y)?
+0
+Let c(p) = p**2 + p + 4. Let v be c(-2). Let x = 3 - v. Let m(a) = 3*a + 12. Let j be m(x). Let n(l) = 3*l - 4. Determine n(j).
+5
+Let h(s) = -13*s**3 - 364*s**2 + 5*s + 13. Let t(n) = -2*n**3 - 61*n**2 + 2. Let f(x) = -h(x) + 6*t(x). Let q be (2/(-5))/((-1)/10). Determine f(q).
+11

@@ -1,0 +1,6 @@
+Let g be 1*634/(-4)*-2. Suppose -4*i + g = -2*n + 35, 5*i - 4*n = 354. What is the remainder when i is divided by 24?
+22
+Let w(d) = d**3 + 8*d**2 - 11*d - 5. What is the remainder when 21 is divided by w(-9)?
+8
+Suppose -4*j + 180 = 684. Let y = j + 178. Suppose -4*m + 79 = 7. Calculate the remainder when y is divided by m.
+16

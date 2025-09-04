@@ -1,0 +1,6 @@
+Let z(a) = -a**3 - a**2 - a - 1. Let d(k) = 28*k**3 + 5*k**2 + 5*k. Determine -d(w) - 5*z(w).
+5 - 23*w**3
+Let g(k) = k**3 + 5*k**2 + 5*k + 5. Let q(h) = h**3 + 6*h**2 + 12. Let j(v) = v**3 + 6*v**2 - v + 13. Let f(w) = 6*j(w) - 7*q(w). What is -5*f(b) - 6*g(b)?
+-b**3
+Let y(j) = -j**2 - j - 2. Let d(u) = -71*u**2 + 4*u + 9. Give -d(r) - 6*y(r).
+77*r**2 + 2*r + 3

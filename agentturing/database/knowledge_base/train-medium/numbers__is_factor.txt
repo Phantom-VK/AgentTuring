@@ -1,0 +1,6 @@
+Does 33 divide 1790332?
+False
+Is 245952 a multiple of 76?
+False
+Is 117 a factor of 1221502?
+False

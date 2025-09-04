@@ -1,0 +1,11 @@
+qdrant-client 
+langchain
+datasets
+langchain-community
+unstructured
+langchain-qdrant
+langchain-text-splitters
+langgraph
+langchain-huggingface
+guardrails-ai
+sentence-transformers

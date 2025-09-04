@@ -1,0 +1,6 @@
+Calculate the highest common factor of 21197 and 5125.
+41
+Calculate the greatest common divisor of 15 and 370455.
+15
+What is the highest common factor of 444048 and 132?
+132

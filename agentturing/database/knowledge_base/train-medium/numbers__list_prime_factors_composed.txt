@@ -1,0 +1,6 @@
+Suppose -3540 = 1190*l - 1196*l. List the prime factors of l.
+2, 5, 59
+Let l = 391 + 25. What are the prime factors of l?
+2, 13
+Let c(b) = 42*b**2 - 70*b + 23. List the prime factors of c(10).
+13, 271

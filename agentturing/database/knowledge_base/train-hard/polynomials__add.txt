@@ -1,0 +1,6 @@
+Let s(u) = -9*u - 41. Let w(i) = -8*i - 21 + 19*i - 26*i + 11*i. Determine 6*s(g) - 13*w(g).
+27 - 2*g
+Let t = 13 - 14. Let f(x) be the second derivative of -x**3/6 - x + 527. Let g(m) = 1 - m. Determine t*g(d) + 3*f(d).
+-2*d - 1
+Let d(p) = 5*p + 3. Let v(n) = 3 + 225*n - 495*n + 274*n. Calculate 2*d(t) - 3*v(t).
+-2*t - 3

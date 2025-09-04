@@ -1,0 +1,6 @@
+Factor -178*m - 171*m - 163*m - 3*m**4 + 464*m + 65*m**2 + m**2 - 15*m**3.
+-3*m*(m - 2)*(m - 1)*(m + 8)
+Determine i, given that -6 - 223*i**2 - 222*i**2 - 8*i - 226*i**2 + 669*i**2 = 0.
+-3, -1
+Let a(l) be the first derivative of -7/6*l**3 + 5/4*l**2 - 5 + l. Suppose a(t) = 0. What is t?
+-2/7, 1

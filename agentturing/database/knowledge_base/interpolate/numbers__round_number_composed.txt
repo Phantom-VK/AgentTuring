@@ -1,0 +1,20 @@
+Let m(i) = -398*i**3 + 3*i**2 + 26*i - 23. Let v(q) = 797*q**3 - 5*q**2 - 52*q + 45. Let l(s) = 5*m(s) + 3*v(s). Let b be l(14). Round b to the nearest 100000.
+1100000
+Let b = -46939.74067 - -46940. What is b rounded to 2 dps?
+0.26
+Let o = 43 + -42.17. Let d = 15.13 - o. What is d rounded to zero decimal places?
+14
+Suppose -5*h + h = 3*w - 15585769, -5*w + 25976340 = -5*h. Suppose -a - w = 1784737. Round a to the nearest 1000000.
+-7000000
+Suppose 36 = -16*c + 28*c. Suppose 5*g - c*a + 8246 = -5357, 0 = 4*g + 5*a + 10875. Round g to the nearest 100.
+-2700
+Let u = -0.16 - -1.25. Let n = 0.03 + u. What is n rounded to 1 dp?
+1.1
+Let s be -5016*((-49988)/30 + 2/(-5)). Suppose -24*p + s = -26*p. Round p to the nearest one million.
+-4000000
+Let h = -184056.839 - -184058.83900011. Let n = 1.97 + 0.03. Let l = n - h. What is l rounded to seven decimal places?
+-0.0000001
+Let o(c) = -1735881*c**3 - 5*c**2 + 2*c + 8. Let x be o(-4). Let q = 65396304 - x. What is q rounded to the nearest one million?
+-46000000
+Let w = -24.98 + -0.92. Let x = -24.19 - w. Let z = x + -1.587. Round z to 2 decimal places.
+0.12

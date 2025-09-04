@@ -1,0 +1,20 @@
+What is 1b4e (base 15) in base 16?
+1724
+What is -110001000101100001 (base 2) in base 5?
+-22413212
+Convert -21021221021 (base 3) to base 4.
+-203003032
+Convert 63b4b (base 13) to base 16.
+2bea7
+157544 (base 10) to base 8
+463550
+What is bbc8 (base 16) in base 14?
+1373a
+What is 263820 (base 9) in base 4?
+213020331
+-2030205 (base 6) to base 14
+-27645
+Convert -4014121 (base 6) to base 4.
+-232012201
+What is 22200000000 (base 3) in base 7?
+1310223

@@ -1,0 +1,6 @@
+Collect the terms in -82*h**2 - 86*h**2 - 92*h**2 - 90*h**2 + 348*h**2.
+-2*h**2
+Collect the terms in -144*d**2 + 84*d**2 + 66*d**2.
+6*d**2
+Collect the terms in 2*s**3 - s**3 + 2*s**3 - s**3.
+2*s**3

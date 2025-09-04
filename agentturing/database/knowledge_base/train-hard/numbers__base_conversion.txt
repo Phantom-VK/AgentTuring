@@ -1,0 +1,6 @@
+-17a535 (base 14) to base 16
+-cbe83
+What is 147641 (base 12) in base 16?
+542d1
+-1361510 (base 7) to base 8
+-545437

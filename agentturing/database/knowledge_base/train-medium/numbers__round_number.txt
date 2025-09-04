@@ -1,0 +1,6 @@
+What is -0.12933887 rounded to two dps?
+-0.13
+What is 0.379796 rounded to 1 dp?
+0.4
+What is 9.63237 rounded to zero dps?
+10

@@ -1,0 +1,6 @@
+Let b = 5.24 + -0.24. What is the second biggest value in 0, b, -0.2?
+0
+Let u(t) = -t**3 + 3*t**2 + 4*t + 3. Let a be u(4). Let p = 23 + -21. What is the second smallest value in 4/7, a, p?
+p
+Let k = 5.4 - 5.4. Which is the second biggest value?  (a) 5  (b) 1/3  (c) k
+b

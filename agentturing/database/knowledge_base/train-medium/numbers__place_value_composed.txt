@@ -1,0 +1,6 @@
+Let j = 4 - 1. Let f be (6/4)/(2/20*5). Suppose -f*v - 2*v = -l - 131, 2*v - j*l - 55 = 0. What is the units digit of v?
+6
+Suppose -5*z + 3*c = -254, 2*z + c = 100 - 5. Suppose -i + z = -19. What is the tens digit of i?
+6
+Let s(l) = l**3 - 4*l**2 + 3. Let m be s(4). Suppose h = 2*h - m. Let j(x) = 2*x**3 - 3*x**2 + 3*x - 3. What is the units digit of j(h)?
+3

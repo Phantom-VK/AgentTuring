@@ -1,0 +1,6 @@
+What is prob of sequence euz when three letters picked without replacement from zzeue?
+1/15
+Four letters picked without replacement from {q: 2, x: 3, y: 1, o: 5, t: 5}. What is prob of sequence otxy?
+5/2912
+What is prob of sequence qas when three letters picked without replacement from assqgqqasaq?
+2/55

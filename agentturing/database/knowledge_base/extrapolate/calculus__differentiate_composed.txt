@@ -1,0 +1,20 @@
+Find the third derivative of -277*f**2 - 1179*f**2 + 23*f**2 - 558*f**5 wrt f.
+-33480*f**2
+Let f(x) = -x**3 - 2*x**2 - 3*x + 1. Let p(q) = -2*q**4 + 12*q**3 + 8*q**2 + 839*q - 4. Let s(b) = 8*f(b) + 2*p(b). What is the second derivative of s(y) wrt y?
+-48*y**2 + 96*y
+What is the second derivative of -1 + 214*c - 842*c**3 - 47*c + 56*c wrt c?
+-5052*c
+Let c(f) be the first derivative of 5*f**6/12 + 7*f**5/30 - 29*f**2 - 7. Let t(s) be the second derivative of c(s). Find the third derivative of t(o) wrt o.
+300
+What is the second derivative of 0*r**2 - 119*r + 0*r**2 + 36*r - 436*r**3 - 182 + 82*r wrt r?
+-2616*r
+Let l(p) = -26*p**2 + 8*p + 2. Let f = -203 - -197. Let m(r) = 27*r**2 - 7*r - 1. Let z(n) = f*m(n) - 5*l(n). Find the second derivative of z(y) wrt y.
+-64
+Suppose -2*b + 8*b = 36. Suppose -5*i - b = -26. Find the third derivative of n**2 + 0*n**2 - 94*n**i + 92*n**4 wrt n.
+-48*n
+Let x = 45 - 43. What is the second derivative of 2*t + 33*t**x + 3*t**2 + 49*t - 1 wrt t?
+72
+Let h be 3 - (3 - 2) - (2 + -3). What is the first derivative of 22*a + 25*a + 24*a - 9 + h*a**2 - 56*a wrt a?
+6*a + 15
+Let q = -43 + 45. Differentiate -89 - 9*a**2 + 9*a**q + 37*a**4 + 13 with respect to a.
+148*a**3

@@ -1,0 +1,20 @@
+In base 6, what is -221500 + 505?
+-220551
+In base 13, what is -422534 - -3?
+-422531
+In base 10, what is -1 - 3758462?
+-3758463
+In base 16, what is -125e + b9e?
+-6c0
+In base 14, what is 205b + -6d2?
+1769
+In base 10, what is -688 - 7142?
+-7830
+In base 2, what is -11010100100010000101110 - -1?
+-11010100100010000101101
+In base 8, what is -4125 + -2333?
+-6460
+In base 10, what is 216 - -2623?
+2839
+In base 14, what is -5 + 418b8d?
+418b88

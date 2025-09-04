@@ -1,0 +1,20 @@
+Let a be 2/(-3) - 12/(-90)*(-3 - -23). Solve 5 = 5*o + 4*y, a*y = -2*o - 0*y for o.
+5
+Suppose -3*q - 91 = -106. Suppose 4*o = -q*l + 15, o + 5 = 2*l + 12. Solve 0 = -2*d - o + 11, -4*f = d + 1 for f.
+-1
+Suppose -16 = 4*l, 3*l - 20 = -5*s + 8. Suppose 70 = -764*z + 771*z. Let g = z - s. Solve 0*k = -3*k - 4*u - 24, 2 = -2*k + g*u for k.
+-4
+Let p be 2/(1 + 3 + -2) + 4. Suppose -3*g + 2*q = -8, g + 5*q - 1 = 13. Solve c - 25 = p*r, -c - 1 = r + g for r.
+-5
+Let y = -113 + 134. Suppose -2*j + y = 3*s, 6*j = -3*s + j + 12. Solve 6*a + 3*m = 3*a + s, -4*m + 12 = 0 for a.
+0
+Let y = 33 - 29. Suppose 3*n - y*b - 51 = -11, 0 = -5*n + b + 44. Suppose 0 = -j - 5*g - n, -2*j + 1 + 7 = 4*g. Solve 2*l - l - 2 = 5*a, j = -4*l for a.
+-1
+Let f(z) = -32*z**3 - 191*z**2 + 4*z - 8. Let v be f(-6). Solve 0 = -5*w + v*k + 40, -6*k = -4*k + 10 for w.
+4
+Let f = 194 + -185. Suppose -f*q = -55 - 62. Solve 0*l - l = 5*n + q, 3*n + 5 = -2*l for n.
+-3
+Suppose -4*i = -6*i + 64. Let u = 62 - i. Suppose 5*h + u = 45. Solve x - h*x = d - 1, x - 5*d + 5 = 0 for x.
+0
+Let i = 43482 + -43480. Let z be 1*-4*(-5)/2. Solve 3*l + 2*l + 22 = -i*u, -2*l - z = 2*u for u.
+-1

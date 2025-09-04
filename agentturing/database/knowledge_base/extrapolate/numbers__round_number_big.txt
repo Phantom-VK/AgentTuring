@@ -1,0 +1,20 @@
+What is 44.6267364975 rounded to 4 decimal places?
+44.6267
+Round -5912262.75249 to the nearest one hundred thousand.
+-5900000
+Round -56109902466.4 to the nearest one million.
+-56110000000
+Round 0.0319024593406 to 4 decimal places.
+0.0319
+Round 1217.32226979 to the nearest one hundred.
+1200
+What is 1224.963868563 rounded to the nearest one hundred?
+1200
+Round 0.0414565393029 to seven dps.
+0.0414565
+What is -0.16142309165 rounded to one decimal place?
+-0.2
+Round -8.8513041727 to the nearest 10.
+-10
+What is -46296520.8159 rounded to the nearest one thousand?
+-46297000

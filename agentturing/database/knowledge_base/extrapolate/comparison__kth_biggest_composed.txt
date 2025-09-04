@@ -1,0 +1,20 @@
+Let o = 0.93 - -0.12. Let j = o + -0.95. What is the biggest value in 0.5, 1/4, 11, j?
+11
+Suppose 5*g + 4*g = 27. Let o = -480 - -479.9. Which is the second smallest value?  (a) g  (b) o  (c) -5
+b
+Let n = 125 - 73. Let o = -48 + n. Suppose 0*q = 4*q - 8. Which is the third biggest value?  (a) q  (b) o  (c) -6/7
+c
+Let d be (-8*(-7)/(-112))/(5/(-2)). What is the third smallest value in d, 7, 0.6, 2/5, -0.4?
+2/5
+Let r = -0.208 + -2.792. Which is the biggest value?  (a) r  (b) -15  (c) -0.1  (d) 5  (e) 3
+d
+Let u = 2012 + -2012.2. Which is the fifth biggest value?  (a) -11  (b) -2  (c) -5/6  (d) 1/4  (e) u
+a
+Let r = -0.233 - -49.333. Let n = 49.86 - 0.86. Let f = r - n. What is the second smallest value in -5, f, -1/12?
+-1/12
+Let z = -149/175 - 33/175. Which is the third biggest value?  (a) z  (b) 0  (c) 5
+a
+Suppose -7*u + 32 = u. Suppose -2*o = 2*o, u*o - 16 = 4*v. Let n be v/10*50/(-90). What is the biggest value in n, -3/4, -2/11?
+n
+Let d = -15764 - -15763.95. Let s(n) = n**3 + 5*n**2 - 5*n + 8. Let g be s(-6). What is the biggest value in 4, g, d?
+4

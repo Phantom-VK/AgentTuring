@@ -1,0 +1,6 @@
+In base 6, what is 0 + 52?
+52
+In base 10, what is 489 - 0?
+489
+In base 3, what is 121 - -2212?
+10110

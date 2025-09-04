@@ -1,0 +1,6 @@
+Which is the second biggest value?  (a) 291029  (b) 2/21  (c) -1/7
+b
+Which is the third biggest value?  (a) 14  (b) -11  (c) -2  (d) -9.1  (e) 1
+c
+What is the fourth biggest value in -1, 1859/133, 4, 2/9, 1/11, -4/5?
+1/11

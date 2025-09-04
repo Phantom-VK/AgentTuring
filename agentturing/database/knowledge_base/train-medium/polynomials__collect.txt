@@ -1,0 +1,6 @@
+Collect the terms in -r**2 + 4*r**2 + 7108 - 3549 - 3559.
+3*r**2
+Collect the terms in -2023*r**2 + 20333*r**2 + 11397*r**2.
+29707*r**2
+Collect the terms in 123 + 2*w - 272 + 0*w - 118.
+2*w - 267

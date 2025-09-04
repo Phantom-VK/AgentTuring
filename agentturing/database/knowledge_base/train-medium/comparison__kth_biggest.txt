@@ -1,0 +1,6 @@
+What is the third biggest value in -2/7, -3/5, 8, 4/11, 0.3?
+0.3
+What is the third smallest value in 1, 3/5, -0.02, 0.3, 44, -1/2?
+0.3
+Which is the third biggest value?  (a) 122  (b) 2  (c) -1  (d) 3  (e) 1134
+d

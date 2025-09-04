@@ -1,0 +1,6 @@
+What is the remainder when 60773 is divided by 608?
+581
+Calculate the remainder when 57145 is divided by 26.
+23
+Calculate the remainder when 144042 is divided by 55.
+52

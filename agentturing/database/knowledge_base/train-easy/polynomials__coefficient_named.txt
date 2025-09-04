@@ -1,0 +1,6 @@
+Rearrange (-35*r + 14*r - 11*r)*(r**2 - r**2 + r + 2*r**2) to q + w*r**3 + y*r + p*r**2 and give y.
+0
+Express 4*t + 4*t - 5*t - t**2 - t**2 as v*t**2 + j + c*t and give c.
+3
+Express (2*a + 0*a + 0*a)*(-16 + 38 + 14) as c*a + f and give c.
+72

@@ -1,0 +1,6 @@
+Suppose -1577*o - 1578 = -1580*o. Let q = 346 + o. Calculate the least common multiple of 22 and q.
+9592
+Let f = 7103/8 + -447137/504. What is the common denominator of f and (-7722)/14157 + (2/(-924))/(5/(-4659))?
+630
+Suppose 0 = -4*a + 15 - 3. Suppose -4*x - o + 4*o + 1120 = 0, o + 1120 = 4*x. What is the common denominator of 37/9 and 2 + a/(-6) + 108/x?
+315

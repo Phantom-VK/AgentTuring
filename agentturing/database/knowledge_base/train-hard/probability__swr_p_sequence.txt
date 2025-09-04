@@ -1,0 +1,6 @@
+What is prob of sequence yu when two letters picked without replacement from {m: 2, u: 2, f: 11, y: 4}?
+4/171
+Three letters picked without replacement from {j: 1, v: 12}. Give prob of sequence jvv.
+1/13
+Two letters picked without replacement from hddhhhddhhhhhhddhhh. Give prob of sequence dh.
+13/57

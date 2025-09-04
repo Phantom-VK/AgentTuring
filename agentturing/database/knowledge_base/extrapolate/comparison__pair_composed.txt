@@ -1,0 +1,20 @@
+Let f(o) = 45*o**3 + 8*o**2 + 4*o - 1. Let x be f(-3). Is -1158 not equal to x?
+True
+Let i be (-6)/(-9) - (-28)/3. Suppose -t - 4*j + 27 = 40, 2*j + 45 = 3*t. Is i at least t?
+False
+Let u = -3807 - -3801. Is u >= 0.147?
+False
+Let v be (2402/12 - 4) + 2/(-3). Which is smaller: 0.1 or v?
+0.1
+Suppose -2*x = 3*i - 2343, -x + 5*i - 236 = -1414. Is 1174 at least x?
+True
+Let i = -21 - -26. Suppose -c = -2*a - 2 + 3, -a - 13 = -i*c. Suppose -a*v = -4*v. Do v and 1 have the same value?
+False
+Let m be (-204)/28 - (-1)/(-2)*-14. Which is smaller: -174 or m?
+-174
+Let d = 33 + 10. Let s = -40.4 + d. Let i = s + -3.6. Is -0.1 not equal to i?
+True
+Let f = -382028/7029 - -100/781. Is f < -2?
+True
+Let w = 19 - 33. Let t = -21016/1557 - 10/173. Which is smaller: t or w?
+w

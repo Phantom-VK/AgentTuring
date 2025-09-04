@@ -1,0 +1,6 @@
+Let d(g) = -9*g**3 + 2*g**2 - 7*g - 5. Let f(q) = 14*q**3 - 3*q**2 + 11*q + 8. Let l(m) = -2*m**2 + 9*m + 13. Let r be l(5). Give r*d(x) + 5*f(x).
+-2*x**3 + x**2 - x
+Let c(p) = -p. Let s(d) = 3*d + 4. Let f(u) = -1. Let r(j) = -3*f(j) - s(j). Let h(o) = -5*c(o) + r(o). Let l(t) = 2*t - 2. Calculate 4*h(g) - 3*l(g).
+2*g + 2
+Let k(x) = -19*x**3 + 3*x - 3. Let y(i) = -i**3 + i - 1. Give -k(m) + 3*y(m).
+16*m**3

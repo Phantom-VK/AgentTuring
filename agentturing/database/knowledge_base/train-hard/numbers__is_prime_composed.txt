@@ -1,0 +1,6 @@
+Let t(f) = -2*f - 14. Suppose -5*r - 2*n = -5*n + 60, 3*r + 3*n = -12. Let s be t(r). Is ((-2779)/(-14))/(2/s) a composite number?
+False
+Suppose 4*b - 2*y - 13302 = 0, 0 = 5*b - 6*b - 3*y + 3315. Is (b/(-66))/((-1)/11) a prime number?
+False
+Suppose 5*t - 1538935 = -5*a + 2081505, 2*a = t - 724079. Is t prime?
+False

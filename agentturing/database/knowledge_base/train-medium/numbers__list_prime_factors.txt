@@ -1,0 +1,6 @@
+List the prime factors of 191401.
+7, 37, 739
+List the prime factors of 414966.
+2, 3, 23, 31, 97
+What are the prime factors of 96963?
+3, 32321

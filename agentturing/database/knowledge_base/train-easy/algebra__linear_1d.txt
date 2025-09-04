@@ -1,0 +1,6 @@
+Solve -21*m + 17*m = -24 for m.
+6
+Solve -4*n + 153 = 129 for n.
+6
+Solve 23*x - 2 = -117 for x.
+-5

@@ -1,0 +1,6 @@
+Let r be ((-1)/10*2)/1. What is the nearest to -1 in 5, r, 0.5?
+r
+Let d = 6.2 + -6. Let m be 0*((-21)/6 + 3). What is the nearest to 2/7 in -0.3, m, d?
+d
+Let f be (-98)/(-20) - 1/(-10). Suppose 8 = 2*k + 2*k + 2*u, 2*k - 4 = 4*u. What is the nearest to 0.1 in f, k, -4?
+k

@@ -1,0 +1,6 @@
+How many minutes are there between 7:38 PM and 2:20 AM?
+402
+How many minutes are there between 2:25 PM and 4:20 PM?
+115
+How many minutes are there between 1:40 PM and 1:17 AM?
+697

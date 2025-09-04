@@ -1,0 +1,6 @@
+Let l = 3002 + -897. Suppose -3*z - 1720 = l. Let d = z + 7693/6. Find the common denominator of d and -33/7.
+42
+Let t(l) = -3*l**3 + 2*l**2 + l - 3. Let m be t(-2). Let o = 47 - m. Calculate the least common multiple of o and 8.
+40
+Let y = -47 - -67. Calculate the smallest common multiple of 22 and y.
+220

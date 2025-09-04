@@ -1,0 +1,6 @@
+Is 145781 a prime number?
+False
+Is 10123 prime?
+False
+Is 78395 a composite number?
+True

@@ -1,0 +1,20 @@
+Two letters picked without replacement from pzzpozoop. What is prob of picking 1 z and 1 p?
+1/4
+Calculate prob of picking 1 u and 2 o when three letters picked without replacement from owwwowpwopoooupoopuw.
+14/285
+Two letters picked without replacement from {e: 5, d: 1, g: 1, n: 1, r: 2, h: 4}. Give prob of picking 1 h and 1 d.
+4/91
+Two letters picked without replacement from hyyyryjhhyyjhnhyyry. Give prob of picking 1 j and 1 h.
+10/171
+What is prob of picking 3 u when three letters picked without replacement from unnuuuuuuuuuzuui?
+11/28
+Four letters picked without replacement from {e: 2, x: 3, h: 1, p: 3}. Give prob of picking 1 x, 2 e and 1 h.
+1/42
+Two letters picked without replacement from {g: 1, k: 4, x: 4, d: 3, v: 5, u: 2}. Give prob of picking 2 d.
+1/57
+Three letters picked without replacement from czmysi. What is prob of picking 1 y, 1 m and 1 z?
+1/20
+What is prob of picking 1 a, 1 b and 2 z when four letters picked without replacement from {z: 2, b: 1, j: 1, a: 1, o: 1, k: 4}?
+1/210
+Three letters picked without replacement from {e: 3, c: 16}. What is prob of picking 3 e?
+1/969

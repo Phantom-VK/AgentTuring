@@ -1,0 +1,6 @@
+Suppose 0*s - 55 = -s. Suppose -4*q - q = -s. What are the prime factors of q?
+11
+Let n = 466 + -212. What are the prime factors of n?
+2, 127
+Suppose 2*k + 8 = 16. Suppose -c - 1 = -k. What are the prime factors of c?
+3

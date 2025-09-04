@@ -1,0 +1,6 @@
+Let y(w) = -w**2 + 28*w - 71. Let t be y(25). Solve 0 = -5*l + l + 4*q + t, 3*q - 22 = -2*l for l.
+5
+Let i = 4 - 2. Let n(m) = -6*m**2 - 6 + 5*m + 2*m**3 + 13 - m**3. Let w be n(5). Solve u = -s + 6, s - 2*s + w = i*u for s.
+5
+Let n be 8/(-8)*(-4)/1. Suppose 36 = -s + n*s. Solve 19 - 1 = -x + 5*v, 5*v - s = 4*x for x.
+2

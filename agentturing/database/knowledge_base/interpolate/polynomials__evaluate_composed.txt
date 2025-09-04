@@ -1,0 +1,20 @@
+Let u(a) = a**3 - 6*a**2 - 4*a + 2. Let v = -128 + 126. Let s(r) = -5*r**3 + 31*r**2 + 20*r - 9. Let b(x) = v*s(x) - 11*u(x). Give b(5).
+-9
+Let r(y) = y**2 + 21*y + 38. Let t be ((-57)/(-12))/(-4 + 210/56). Give r(t).
+0
+Let t(y) be the third derivative of y**7/1008 + y**6/360 - 3*y**5/4 - 39*y**2. Let a(v) be the third derivative of t(v). Calculate a(-2).
+-8
+Let j = 60 + -50. Let z(l) = -4*l**2 - 77*l - l**3 + 72*l - 2 + j*l**2. Give z(4).
+10
+Let c(i) be the first derivative of -2*i**3/3 - 27*i**2 - 9*i + 1604. What is c(-27)?
+-9
+Let q(t) = -3*t**2 - 3*t + 5. Let b(d) = -33*d - 1118. Let g be b(-34). Determine q(g).
+-55
+Suppose 3*z - 7 = s, -4*s - 2 = z - 0*s. Let m(y) = -11*y**2 + 6*y + 8*y**2 + 2*y**z - 1. Let p(a) = 6*a**3 + 2*a**2 - 2*a. Let c be p(1). Calculate m(c).
+-1
+Let j be 2/(-4) - 826/(-28). Suppose -26 = -5*t + 4*k, -4*t + 22 = -3*t - 5*k. Let i(x) = j*x + 24*x + 7*x**3 - x**t - 53*x. Give i(1).
+6
+Let q(l) = 171 - 6*l. Let z(b) = 166 - 6*b. Let j(o) = -6*q(o) + 7*z(o). What is j(23)?
+-2
+Let p(c) be the first derivative of c**4/4 - 5*c**2/2 + 7*c + 52. Let d be p(-3). Let t(o) = 1 - 2*o. Give t(d).
+11

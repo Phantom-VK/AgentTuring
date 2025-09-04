@@ -1,0 +1,20 @@
+Let q(d) = 52*d - 69. Determine q(2).
+35
+Let d(f) = -4*f**3 + 9*f**2 + 51*f - 43. Calculate d(-6).
+839
+Let q(k) = 91360 - 1202*k. Give q(76).
+8
+Let x(z) = 2*z**2 - 210*z - 4340. Give x(123).
+88
+Let u(p) = 2342 - 1173*p. What is u(2)?
+-4
+Let b(a) = a**2 - 1973*a + 360877. Give b(204).
+1
+Let h(o) = 22640*o + 67927. What is h(-3)?
+7
+Let a(u) = -12326*u - 123264. Calculate a(-10).
+-4
+Let b(m) = 29659*m - 148300. Determine b(5).
+-5
+Let b(m) = 20*m**3 + 639*m**2 - 698*m - 165. What is b(-33)?
+0

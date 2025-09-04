@@ -1,0 +1,6 @@
+What is 20 (base 14) in base 3?
+1001
+Convert -20 (base 7) to base 12.
+-12
+Convert 1101101 (base 2) to base 12.
+91

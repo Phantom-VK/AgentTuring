@@ -1,0 +1,6 @@
+Rearrange -69 - 3*q + 67 + 26*q**2 + 32*q**2 to v*q**2 + w + h*q and give w.
+-2
+Express 2*l + 2 + 16*l**3 + l - 37*l**3 + 12*l**3 as o + d*l**2 + b*l**3 + p*l and give b.
+-9
+Express (0*i - 2*i + 0*i)*(1656*i - 2871*i + 1727*i) as d*i**2 + y*i + g and give d.
+-1024

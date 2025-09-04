@@ -1,0 +1,6 @@
+Let b(k) = -k**2 + 2*k. Suppose -3*m - c = 2*c - 27, m - c = -1. Suppose -j + m*v = 6, j + v - 4 = -0*v. Give b(j).
+0
+Let s(w) = w**3 + w. Let i be ((-8)/(-10))/(4/(-10)). What is s(i)?
+-10
+Suppose 16*t - 1 = 17*t. Let y(k) = 26*k**2 + k + 1. What is y(t)?
+26

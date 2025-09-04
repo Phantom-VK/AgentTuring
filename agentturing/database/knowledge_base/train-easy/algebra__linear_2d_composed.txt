@@ -1,0 +1,6 @@
+Suppose u + 4*u = -4*p - 11, 3*p - 3*u - 12 = 0. Let j be (4/(-8))/(p/(-12)). Solve -5*l + 5*w + 19 = -j, 3*l - 15 = -2*w for l.
+5
+Suppose 0 = -3*d + 17 - 2. Suppose d*t = 2*v + 6, 3*v + t - 12 = -2*t. Solve v*r - f = 5, 4*r = 2*f + f + 5 for r.
+5
+Let h(g) = 2 - g. Let r be h(0). Let w be ((-2)/2)/(4/(-12)). Let v = r + w. Solve m = -4*z + v, -2*z = 4*m - 2*m + 2 for z.
+2

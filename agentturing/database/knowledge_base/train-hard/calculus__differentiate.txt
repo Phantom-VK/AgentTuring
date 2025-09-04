@@ -1,0 +1,6 @@
+What is the third derivative of -21592351*k**3*u**3*y**3 - 2*k**3*u**2*y**2 - 11*k**3*u**2 + 2196*k**3*y**3 - 26*k*y**3 wrt u?
+-129554106*k**3*y**3
+Differentiate -10664908*f**2*z - 16966209*f**2 wrt z.
+-10664908*f**2
+Find the first derivative of -645132834*r - 563498397 wrt r.
+-645132834

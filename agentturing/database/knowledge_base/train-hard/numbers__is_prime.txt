@@ -1,0 +1,6 @@
+Is 11134730149 a composite number?
+False
+Is 589926449 a prime number?
+False
+Is 41746956677 a composite number?
+True

@@ -1,0 +1,6 @@
+Let p = 113407 + -113407.00055557. What is p rounded to five dps?
+-0.00056
+Let o = 18.8 - 22. Let p = 119.156295 + -122.3563. Let u = p - o. What is u rounded to 5 dps?
+-0.00001
+Let g be 42536200/375 + 2/15. Round g to the nearest 1000.
+113000

@@ -1,0 +1,6 @@
+Calculate the highest common factor of 7 and 298.
+1
+What is the highest common factor of 33 and 506?
+11
+What is the greatest common divisor of 190 and 20?
+10

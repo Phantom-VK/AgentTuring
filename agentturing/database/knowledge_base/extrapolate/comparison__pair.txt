@@ -1,0 +1,20 @@
+Is 273 less than 1919?
+True
+Is 0 smaller than -1075/35579?
+False
+Is -31113 greater than or equal to -31663?
+True
+Which is bigger: 32496/115 or 284?
+284
+Is -5 greater than or equal to -19/30851?
+False
+Which is greater: -2.025 or -0.5101?
+-0.5101
+Is 508/70871 equal to -1?
+False
+Which is smaller: -27901 or -83701/3?
+-27901
+Which is bigger: 1494 or -355?
+1494
+Which is bigger: -1 or -1103/13344?
+-1103/13344

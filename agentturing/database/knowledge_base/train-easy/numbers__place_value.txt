@@ -1,0 +1,6 @@
+What is the thousands digit of 47240?
+7
+What is the thousands digit of 15237?
+5
+What is the units digit of 6558?
+8

@@ -1,0 +1,6 @@
+Collect the terms in 3*t**3 + 746819970828559*t**2 - 746819970828559*t**2.
+3*t**3
+Collect the terms in -75*w - 245378*w**2 - 109102*w**2 + 75*w.
+-354480*w**2
+Collect the terms in 2 + 170*z + 86*z - 443*z + 100*z + 128*z.
+41*z + 2

@@ -1,0 +1,6 @@
+Let u be (-2)/4 + 50/4. Let r = 136 - 137. Let d be r + u/4 - -1. Solve -n - 4 = d*n for n.
+-1
+Let c be (18/27)/(4/6). Let w(q) = 3*q**2 + 3*q**2 + 0*q**2. Let x be w(c). Solve 0 = 5*m + x + 4 for m.
+-2
+Let y be (-4 - -5)/(1/94). Let g = 97 - y. Solve b + 0 = g for b.
+3

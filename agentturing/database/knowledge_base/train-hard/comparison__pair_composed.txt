@@ -1,0 +1,6 @@
+Let t = -69756/7 - -9968. Is t at least -4/11?
+True
+Let i(d) = -d**3 - 6*d**2 - 2*d + 3. Let n be i(-5). Let s be 4/(-2)*n/8. Suppose -a = -l + s*l - 5, 2*l - 2*a - 2 = 0. Is l at most 12/17?
+False
+Let d be (-5574)/(-80) + (-32)/(-10) + -3. Is 69 greater than d?
+False

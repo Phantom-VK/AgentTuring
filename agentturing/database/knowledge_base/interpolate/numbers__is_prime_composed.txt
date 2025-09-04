@@ -1,0 +1,20 @@
+Suppose 34*n = 12*n + 44. Suppose 2*a = -n*o + 3669 + 3079, 4*a + 5*o = 13493. Is a a prime number?
+False
+Let h(k) = -8*k**3 + 7*k**2 - 35*k - 5. Is h(-9) prime?
+True
+Let u be (-14 + 16)/(6/19587). Let p = u - 3650. Is p a prime number?
+True
+Let x(m) be the third derivative of 401*m**7/5040 - 2*m**5/15 + 14*m**2. Let l(q) be the third derivative of x(q). Is l(1) prime?
+True
+Suppose 0 = f + 5*f + 6. Let w be f/((-3)/(18/2)). Is ((-422)/6)/((-1)/w) prime?
+True
+Suppose -n = -40 + 14. Suppose 621 = -6*z + 975. Let h = z - n. Is h composite?
+True
+Is ((-19)/(57/3))/((-2)/52202) composite?
+True
+Suppose -5*h + 26091 = 2*w - 209864, -4*w + 235965 = 5*h. Is h a prime number?
+True
+Suppose 0 = 4*y - v - 1155201, 10*v + 5 = 9*v. Is y a prime number?
+False
+Let m(d) = d**3 - 11*d**2 + 10*d + 6. Let r be m(9). Is (r/4)/(-11)*2722/3 a prime number?
+True

@@ -1,0 +1,6 @@
+Let p(n) = 157741*n**3 - n**2 + 13*n - 37. Let m be p(3). What is m rounded to the nearest 100000?
+4300000
+Let y = -522007.72 - -522061.7200043. Let h = 54 - y. What is h rounded to 6 dps?
+-0.000004
+Suppose -17*h = -9*h - 83200. Let k = h + 7000. What is k rounded to the nearest 1000?
+17000

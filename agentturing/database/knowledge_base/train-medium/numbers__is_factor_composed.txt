@@ -1,0 +1,6 @@
+Let h be ((-11)/(-66))/(2/12). Is (2/h)/(32/304) a multiple of 3?
+False
+Let t(n) = -n**2 + 43*n + 23. Does 23 divide t(35)?
+False
+Let j = -27 + 30. Suppose j*c = -c + 168. Is c a multiple of 6?
+True

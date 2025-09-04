@@ -1,0 +1,6 @@
+What is the derivative of m**3 - 105*m**2 + 2*m + 4343 wrt m?
+3*m**2 - 210*m + 2
+Differentiate 128*y*z**3 - 3*y*z - 3*z**3 - 75 wrt y.
+128*z**3 - 3*z
+What is the second derivative of 3*b**3*q + 276*b**2*q**2 - 11*b*q**2 + 33*b*q - 11*q wrt b?
+18*b*q + 552*q**2

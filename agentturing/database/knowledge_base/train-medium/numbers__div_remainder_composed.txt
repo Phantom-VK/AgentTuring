@@ -1,0 +1,6 @@
+Let j = 854 + -837. Calculate the remainder when 508 is divided by j.
+15
+Let w = -685 - -696. Calculate the remainder when 106 is divided by w.
+7
+Let m(y) = 5*y - 7. Let b be m(-6). Let k = -22 - b. Calculate the remainder when 3 + (0 - 13*-3) is divided by k.
+12

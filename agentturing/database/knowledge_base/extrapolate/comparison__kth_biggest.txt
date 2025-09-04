@@ -1,0 +1,20 @@
+What is the fourth biggest value in -2/33, -1/4, 21/803, 0.3?
+-1/4
+Which is the third biggest value?  (a) 426180/7  (b) 0.2  (c) -0.3
+c
+What is the fifth smallest value in -3, -1/8, -9, -0.206, -1, 2/7, 405?
+-1/8
+What is the third smallest value in -0.4, -4, 111.8, -2/9, 0.4, 2, 0.27?
+-2/9
+What is the second smallest value in -3, -5/4, -1/3, -2, 4/69, 42?
+-2
+Which is the third biggest value?  (a) -0.5  (b) -0.3  (c) -1/5  (d) -59700/17  (e) -4
+a
+What is the biggest value in -1, 308, 0.908?
+308
+Which is the third smallest value?  (a) -0.5  (b) 0.2  (c) -393  (d) 5/3  (e) -0.05  (f) -1/6
+f
+Which is the fourth smallest value?  (a) -8/11  (b) 5  (c) 1/4  (d) -1/2  (e) 2  (f) 15
+e
+What is the sixth biggest value in -0.4, 1, 2/133, 2/9, -15, -6?
+-15

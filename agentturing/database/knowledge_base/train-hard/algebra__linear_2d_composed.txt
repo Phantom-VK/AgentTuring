@@ -1,0 +1,6 @@
+Let q = -6171 + 6176. Suppose 0 = 5*m + 5 - 25. Solve 0 = -9*s + 4*s + q*n + 35, 5*s - 17 = -m*n for s.
+5
+Suppose 3*m + 28 = -5*c + 32, 3*c = -4*m + 9. Solve -v + r + m - 5 = 0, 3*v + 8 = 2*r for v.
+-4
+Let m = -15 + 18. Let g = -12079 + 12081. Solve 5*h + g*s = -m + 8, s + 8 = h for h.
+3

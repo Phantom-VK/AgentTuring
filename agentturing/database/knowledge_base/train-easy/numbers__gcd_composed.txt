@@ -1,0 +1,6 @@
+Suppose 2*t + 22 = f, 0*f - 4*f + 88 = 2*t. What is the highest common factor of 110 and f?
+22
+Let k(j) = j**3 - j + 2. Let h be k(-2). Let n(c) = c - 6. Let a be n(8). Let p be a/h + (-507)/(-6). Calculate the highest common divisor of 21 and p.
+21
+Suppose -r - 2 = 4. Let q be (-306)/(-15) + r/15. Let h(c) = 5*c**2. Let s be h(-4). Calculate the highest common divisor of q and s.
+20

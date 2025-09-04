@@ -1,0 +1,6 @@
+Simplify sqrt(448) + 4 + (sqrt(448) - (sqrt(448) - (-1*sqrt(448) - sqrt(448))**2)).
+8*sqrt(7) + 1796
+Simplify (sqrt(210)/(sqrt(10) - sqrt(160)))/(sqrt(3) + 1*sqrt(9)/sqrt(3) + sqrt(3)).
+-sqrt(7)/9
+Simplify ((1*sqrt(1944) - sqrt(1944))/(sqrt(972)*-2 - sqrt(972)))**2.
+0

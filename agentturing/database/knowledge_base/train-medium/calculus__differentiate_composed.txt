@@ -1,0 +1,6 @@
+Let v(o) be the third derivative of -27*o**6/40 - 61*o**5/60 + o**3/3 - 91*o**2. What is the third derivative of v(m) wrt m?
+-486
+Suppose 0 = -5*j + 4*b + 4, 5*j + 2*b - 28 = 0. Differentiate -28 - 8*x**j - 21 + 16 + 6*x**4 wrt x.
+-8*x**3
+Let n(c) = -c**3 - 6*c**2 - 71*c. Let v(u) = 7*u**2 + 72*u. Let p(j) = -5*n(j) - 4*v(j). Find the second derivative of p(y) wrt y.
+30*y + 4

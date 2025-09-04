@@ -1,0 +1,6 @@
+Simplify ((z**(1/3)/z)/z**4)/(z**(1/6))**(-2/7) assuming z is positive.
+z**(-97/21)
+Simplify ((m*m/(m*m**(-12)))/(m**(4/3)*m*m))/(((m/m**(-1/20))/m)/m**(-20)) assuming m is positive.
+m**(-623/60)
+Simplify (o*o**1)**(1/6)/(o*o/((o*o*(o/(o*o**(-3/2)*o*o))/o*o*o)/o)*o*o*o/o**(-2/17)) assuming o is positive.
+o**(-335/102)

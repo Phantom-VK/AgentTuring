@@ -1,0 +1,20 @@
+How many milliseconds are there in 2/25 of a minute?
+4800
+How many hours are there in 71.818551 seconds?
+0.0199495975
+How many meters are there in seven fifths of a kilometer?
+1400
+How many minutes are there in 263345.01us?
+0.0043890835
+How many months are there in thirteen halves of a century?
+7800
+What is 33/4 of a litre in millilitres?
+8250
+What is ninety-two fifths of a litre in millilitres?
+18400
+What is 28/5 of a millimeter in micrometers?
+5600
+How many days are there in 22215.7296 milliseconds?
+0.0002571265
+Convert 2.209277 litres to millilitres.
+2209.277

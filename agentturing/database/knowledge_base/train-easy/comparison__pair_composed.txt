@@ -1,0 +1,6 @@
+Let y = -4 - -4. Suppose y = 5*j - 4*j. Which is bigger: j or 3/8?
+3/8
+Let v = -1 + -7. Let i be v/2*(6 - 5). Which is smaller: 2 or i?
+i
+Let w be (6/(-2))/((-9)/12). Let s be (-2)/3*(-6)/w. Let l = 3 - 2. Is s at least as big as l?
+True

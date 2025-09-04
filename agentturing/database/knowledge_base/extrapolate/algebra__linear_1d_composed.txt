@@ -1,0 +1,20 @@
+Let j = -72 + 62. Let f be 5 + (-24)/(j/5). Solve 7 - f = -2*o for o.
+5
+Let c(l) = 2*l - 439 + 879 - 434 - 2*l**3 + l**2. Let z be c(0). Solve 0 = -3*b + 3 + z for b.
+3
+Let a = -90 + 126. Suppose 59*r + a = 65*r. Solve r*w = w - 5 for w.
+-1
+Suppose -20 = 2*t - 6*t. Suppose 0 = 8*g - t*g - 9. Suppose 4*u - g*u = 2*u. Solve -2*n + n = u for n.
+0
+Let u(y) = -y**2 + 9*y + 10. Let w be u(10). Let s = -1196 + 1204. Solve 2*d + w = s for d.
+4
+Let b(h) = -h - 17. Let n be b(-27). Solve 0 = -19*g + 21*g + n for g.
+-5
+Suppose 0 = -5*z + 5*x + 10, -x + 3 = -4*x. Let o be (6/2)/(-3) - (-2 - z). Solve -o = n - 0 for n.
+-2
+Let a be 90*5/(-40)*-4. Suppose -7*s + 4*s = -a. Let k be (s/(-2))/(24/(-16)). Solve 0 = -k*p - 22 - 3 for p.
+-5
+Let h be 276/14 - ((-870)/105 + 8). Let x(d) = -d**3 + 5*d**2 - 5*d + 6. Let w be x(4). Solve w*s - h = -2*s for s.
+5
+Suppose -23 - 74 = -34*b + 5. Solve 21 = -6*r + b for r.
+-3

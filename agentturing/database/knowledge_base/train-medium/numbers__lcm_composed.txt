@@ -1,0 +1,6 @@
+Let x = -19311 + 579253/30. Let o = 1747 + -47153/27. Find the common denominator of o and x.
+270
+Let w = 2620 - 146747/56. Find the common denominator of -46/21 and w.
+168
+Let t(z) = 6*z - 160. Calculate the smallest common multiple of t(30) and 132.
+660

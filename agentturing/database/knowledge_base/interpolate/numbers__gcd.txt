@@ -1,0 +1,20 @@
+What is the highest common factor of 1366146 and 72?
+18
+What is the greatest common divisor of 189 and 10813257?
+189
+Calculate the greatest common divisor of 45693624 and 24.
+24
+Calculate the highest common factor of 374 and 2843698.
+22
+Calculate the greatest common divisor of 15 and 48210285.
+15
+What is the greatest common divisor of 2491574 and 2710?
+542
+Calculate the highest common factor of 8249 and 25877.
+113
+Calculate the greatest common divisor of 98571 and 266255.
+1133
+What is the highest common divisor of 150273 and 139236?
+849
+Calculate the greatest common divisor of 3926232 and 657.
+657

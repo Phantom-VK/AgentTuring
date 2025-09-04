@@ -1,0 +1,20 @@
+Let p(d) = 4 - 2*d. Let f be p(4). Suppose -q = 2*u - 3, -25*q + 21*q = 12. Put u, 4, -8, f in increasing order.
+-8, f, u, 4
+Let r = 3212 + -3208. Sort r, 5, 3, 2.
+2, 3, r, 5
+Let g = -205 + -42. Let z = g - -250. Suppose 2*p = 0, -p - 4*p = -3*j. Put j, 4, z in decreasing order.
+4, z, j
+Suppose -3*j - 8 = 2*q, 0 = -3*j - 5 - 1. Let t = -692.9 + 694.9. Sort -0.5, q, t in descending order.
+t, -0.5, q
+Let b be ((-9)/6)/(18/420). Sort b, -1, -2 in descending order.
+-1, -2, b
+Let l = -41.4 + 41.2. Put -3.3, l, 8 in increasing order.
+-3.3, l, 8
+Let p = -173 - -223. Let s = -48 + p. Sort 6, s, -2.
+-2, s, 6
+Suppose 2*i = -5*i + i. Suppose 5*q - 8 = -5*h + 87, -83 = -5*h - 2*q. Sort 5, h, -5, i in increasing order.
+-5, i, 5, h
+Let a = -2.144 - -0.044. Let g = 1.6 + a. Let h be ((-36)/(-40))/((-6)/5). Sort h, -4, g, 5/3 in ascending order.
+-4, h, g, 5/3
+Let o = -3641 + 3647. Sort -1, o, -2, -4, -3.
+-4, -3, -2, -1, o

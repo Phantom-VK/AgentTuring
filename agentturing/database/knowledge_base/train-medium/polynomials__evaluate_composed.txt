@@ -1,0 +1,6 @@
+Let j(x) = 5 - 3*x. Let t be (-73 + 1/(4/8))*1. Let p = t - -79. What is j(p)?
+-19
+Let z(t) = t - 8. Let g be z(8). Let a(x) be the first derivative of x**7/840 + x**6/360 - x**3/3 + 1. Let p(f) be the third derivative of a(f). Calculate p(g).
+0
+Let j(g) = 740 - 200*g. Let w(x) = 11*x - 41. Let h(a) = -3*j(a) - 55*w(a). Give h(9).
+-10

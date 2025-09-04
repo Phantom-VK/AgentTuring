@@ -1,0 +1,6 @@
+Let x = 0.016 - -2.654. Let i = 0.33 + x. Which is the biggest value?  (a) i  (b) -0.7  (c) 1
+a
+Suppose 3*r = d + 1, 2*r + 4*d + 12 = 6*r. What is the second biggest value in 0.6, 39, r?
+0.6
+Suppose 2*t - 5*r + 22 = 0, 3*t - 4*r + 14 = -5. What is the fourth biggest value in 0.3, -0.5, 6, t?
+t

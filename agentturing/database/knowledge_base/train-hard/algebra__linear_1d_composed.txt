@@ -1,0 +1,6 @@
+Suppose 1717 = 100*v - 283. Solve -v*t = -3*t + 14*t for t.
+0
+Suppose 27*w - j = 28*w - 36, -7*j = w - 36. Solve -47*x = -38*x + w for x.
+-4
+Let b = 11598 + -11589. Solve 5 = b*v - 49 for v.
+6

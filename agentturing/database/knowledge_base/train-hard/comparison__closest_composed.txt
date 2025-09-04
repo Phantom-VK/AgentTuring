@@ -1,0 +1,6 @@
+Let j = 25.5381 + -21.5381. Let g = 9 + -5. Let y = 6 - g. What is the closest to 2 in -3, j, y?
+y
+Let o = -2432 - -2237.4. Let b = -195 - o. What is the closest to -1/3 in b, -1/4, 1.9?
+b
+Let w = -125/7 + 389/21. Which is the nearest to -0.3?  (a) 232  (b) w  (c) 0.1  (d) -4
+c

@@ -1,0 +1,6 @@
+Let u be (-3)/((-3)/19) + -1. Let t be ((-30)/(-20))/((-1)/(-2)). Suppose 0 = 2*p + p + t*n - u, 3*p = 2*n + 33. Does 5 divide p?
+False
+Let o(p) = -7*p - 19. Let l be o(-13). Suppose -4*z + 0*z = -l. Is 9 a factor of z?
+True
+Let k(z) = 4*z + 1. Suppose -5*w - 22 = -2*o, -7 = 5*o - 2*w + 5*w. Let i be k(o). Suppose i*j - 21 = 4*j. Is j a multiple of 7?
+True

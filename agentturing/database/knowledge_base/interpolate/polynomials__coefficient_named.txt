@@ -1,0 +1,20 @@
+Rearrange -62*s**3 + 162*s + 60*s**3 + 2*s**4 - 162*s - 2*s**2 + 8 to d*s**4 + x + t*s**2 + q*s**3 + w*s and give x.
+8
+Express 517*h + 231*h - 1 - 195*h as i*h + s and give s.
+-1
+Rearrange (2*w**2 - 5*w**2 + 2*w**2)*(-840 - 626 + 254 - 2311 + 660) to the form u + q*w**2 + m*w and give q.
+2863
+Rearrange (2 + 0 + 0)*(-a**3 + 0 + 0) - 248*a**3 + 88*a**3 - 603*a**3 to f*a**2 + j + m*a + y*a**3 and give f.
+0
+Rearrange 28*t**3 + 27*t**3 + 33*t**3 - 2*t**4 - 88*t**3 - 243*t + (-5*t**3 + 9*t**3 + 8*t**3)*(6*t - t - 2*t) to r*t**3 + x*t**4 + i*t + q*t**2 + d and give i.
+-243
+Express -b**2 - 5256*b**4 + 3*b**2 + 2*b + 5446*b**4 in the form o*b**2 + x*b**4 + z + g*b**3 + s*b and give s.
+2
+Rearrange -o**2 + 397*o**3 + 1 - 34*o**3 + 53*o**4 - 55*o**4 - 56*o**3 + 239*o**3 to t*o**2 + l + g*o + r*o**3 + n*o**4 and give n.
+-2
+Express (-a + 3 - 3)*(0 + 2 - 1) + (2 - 2 - 2*a)*(2 - 3 + 0) + 91*a + 210*a + 91*a as q*a + j and give q.
+393
+Rearrange (4 - 5 + 2)*(-1173*g + 2280*g - 1165*g) + (-4 + 4 - 3*g)*(1 + 0 - 2) to the form h*g + t and give t.
+0
+Rearrange -2 + 2 - r**2 + (-23*r + 12*r + 10*r)*(24*r - 18*r + 20*r) to the form n*r**2 + h*r + s and give n.
+-27

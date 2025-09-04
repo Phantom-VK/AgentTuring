@@ -1,0 +1,6 @@
+Let a(x) = -20*x**2. Let t(c) = 4*c**2 + 2*c + 1282. Give t(a(h)).
+1600*h**4 - 40*h**2 + 1282
+Let n(y) be the third derivative of y**4/12 - 30*y**2 - 4*y. Let u(g) = -16*g**2 + 7*g. Give u(n(m)).
+-64*m**2 + 14*m
+Let y(k) = -2*k. Let w(h) = 213*h**2 + 258. Determine w(y(u)).
+852*u**2 + 258

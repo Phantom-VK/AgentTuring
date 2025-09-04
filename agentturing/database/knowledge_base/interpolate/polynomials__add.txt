@@ -1,0 +1,20 @@
+Let k(s) = 1 - s**2. Let c(w) = 3*w**2 - 2*w - 5. Let a(z) = 14*z + 748. Let j be a(-53). Calculate j*k(b) + c(b).
+-3*b**2 - 2*b + 1
+Let i(w) = 2*w**2 + 3*w + 8. Let k(j) be the first derivative of j**3/3 + j**2 + 4*j - 622. What is -4*i(q) + 7*k(q)?
+-q**2 + 2*q - 4
+Let r be ((-220)/(-60))/(1/(2 - -1)). Suppose -o + 15*k - 16 = r*k, 14 = o + 2*k. Let y(a) = 3*a + 1. Let p(m) = 3*m + 2. Calculate o*y(w) - 3*p(w).
+3*w - 2
+Let f(t) = -46*t - 1172. Let n(s) = 33*s + 781. Calculate -5*f(k) - 7*n(k).
+393 - k
+Let l(o) = 2*o - 44*o**2 - 6*o**3 + 13*o**3 + 93*o**2 - 42*o**2. Let b(s) = 6*s**3 + 6*s**2 + s. Determine 4*b(x) - 3*l(x).
+3*x**3 + 3*x**2 - 2*x
+Suppose 21*g - 30*g - 18 = 0. Let d(u) = u + 4. Suppose 0 = -2*y + 6*y. Let c(w) = -4*w + 5 + 2*w + 4*w + y. Calculate g*c(r) + 3*d(r).
+2 - r
+Let c(n) = 606*n + 1. Let l(h) = 2423*h + 5. Give 18*c(x) - 4*l(x).
+1216*x - 2
+Let v(c) = 787*c**3 + 6*c**2 + 12*c + 6. Let q(n) = -223510*n**3 - 1705*n**2 - 3410*n - 1705. Give -6*q(m) - 1705*v(m).
+-775*m**3
+Let i(p) = p**3 + 19*p**2 - 27. Let q(x) = 9*x**2 - 13. Give -4*i(w) + 9*q(w).
+-4*w**3 + 5*w**2 - 9
+Let k(u) = -u**2 + 6 - 29 - 6*u + 9 + 11 + 11. Suppose 2*s - 4 = 4*s. Let d = s - 1. Let c(m) = 2*m - 3. What is d*k(t) - 8*c(t)?
+3*t**2 + 2*t

@@ -1,0 +1,6 @@
+Suppose -10*v + 5*v = 4*o - 37409, -2*v - 6 = 0. List the prime factors of o.
+2, 2339
+Let n be 16/(-12) - 4414/6. Let s = n + 524. Let d = 299 + s. What are the prime factors of d?
+2, 43
+Let c = 42 - -22. Let r = 64 - c. Suppose r - 9 = -3*g. List the prime factors of g.
+3

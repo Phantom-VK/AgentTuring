@@ -1,0 +1,6 @@
+Calculate prob of picking 1 k and 1 y when two letters picked without replacement from uykwykcw.
+1/7
+Calculate prob of picking 2 y, 1 e and 1 v when four letters picked without replacement from {v: 2, e: 6, y: 3, b: 3, g: 3}.
+9/595
+Two letters picked without replacement from {e: 8, a: 3}. Give prob of picking 2 a.
+3/55

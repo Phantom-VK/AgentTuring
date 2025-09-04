@@ -1,0 +1,6 @@
+Let j(y) = y**3 + 17*y**2 + 22*y - 18. Calculate j(-16).
+-114
+Let g(h) = 6*h + 107. Give g(-16).
+11
+Let b(v) = 2*v**3 + 15*v**2 + 11*v + 5. Calculate b(-7).
+-23

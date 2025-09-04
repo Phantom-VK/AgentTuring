@@ -1,0 +1,6 @@
+Simplify ((j**(-5)/j)/(j/(j*j/j**(1/9)*j*j)))**(1/17)*(j**6*(j/(j**6/j*j))/j)/(((j/((j*j/j**(1/4)*j*j)/j))/j)/(j*j**(-3))) assuming j is positive.
+j**(347/612)
+Simplify ((c**(-2)/c**(6/5))/((c/((c*c**(-1))/c))/((c**0*c*c)/c)))/(((c**4/c*c*c)/c*c**(-3)/c)/((c*c**(-1))/c**1)) assuming c is positive.
+c**(-26/5)
+Simplify ((x**(-2/9))**(-15/4)/(x**6/(x**(-4/17)*x*x)))**(2/3) assuming x is positive.
+x**(-347/153)

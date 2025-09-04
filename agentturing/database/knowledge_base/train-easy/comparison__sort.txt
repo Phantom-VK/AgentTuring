@@ -1,0 +1,6 @@
+Sort -2, -4, 9, -3, 4 in descending order.
+9, 4, -2, -3, -4
+Sort 4, 2/5, -182, 2/9 in descending order.
+4, 2/5, 2/9, -182
+Put 5, 12, 64 in decreasing order.
+64, 12, 5

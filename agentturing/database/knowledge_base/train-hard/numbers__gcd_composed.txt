@@ -1,0 +1,6 @@
+Suppose 4*t + 77 - 21265 = -5*n, 4*n - 3*t - 16969 = 0. What is the greatest common factor of n and 70?
+10
+Let l(q) be the second derivative of -q**4/12 - 11*q**3/2 - 53*q**2 - 10*q - 5. Let w be l(-29). Calculate the greatest common factor of w and 4.
+2
+Let y be 60/14*588/6. Suppose -3*p - 4*v + 31 = 9, p = 4*v + 34. Calculate the greatest common factor of p and y.
+14

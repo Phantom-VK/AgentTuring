@@ -1,0 +1,6 @@
+Let u(s) = -s**3 - 10*s**2 - 2*s - 12. Let j be u(-10). Let y be 1521/81 - (-2)/9. Suppose 0*x - 95 = y*x. Sort j, -1, x.
+x, -1, j
+Let z = -1875 - -1874. Sort 46, z, -0.03, -1/5 in descending order.
+46, -0.03, -1/5, z
+Let x be ((-154)/28)/(1/4*-2). Suppose -5*t = -2*t - 12. Put t, x, -3 in decreasing order.
+x, t, -3

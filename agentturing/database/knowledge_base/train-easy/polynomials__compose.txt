@@ -1,0 +1,6 @@
+Let h(g) = -4*g**2 - 1 + 1. Let r(v) be the second derivative of v**3/6 + 24*v. Give h(r(n)).
+-4*n**2
+Let w(b) = -2*b. Let s(m) = 5*m. Let d(j) = 3*s(j) + 7*w(j). Let t(q) = -q - 2. Let i be t(-7). Let x(r) = -i*r - r + 5*r + 0*r. Calculate d(x(o)).
+-o
+Let j(o) = 2*o**2. Let w = 76 - 71. Let b(f) be the third derivative of 1/30*f**w + 2*f**2 + 0*f + 0*f**3 + 0 + 0*f**4. Calculate j(b(c)).
+8*c**4

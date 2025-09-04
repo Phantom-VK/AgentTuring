@@ -1,0 +1,6 @@
+Is 683119 composite?
+False
+Is 23641841 prime?
+False
+Is 29438819 a composite number?
+False

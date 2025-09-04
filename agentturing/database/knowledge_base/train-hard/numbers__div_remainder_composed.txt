@@ -1,0 +1,6 @@
+Suppose 0 = -4*x + 16. Suppose 105 + 15 = x*v. Suppose 2*n = 5*j - 562, 5*j - 26*n = -22*n + 554. Calculate the remainder when j is divided by v.
+24
+Suppose -3*v = 38*v - 18*v - 8073. What is the remainder when v is divided by 63?
+36
+Let g(f) = 74*f + 761. Let k = 1 - -2. Suppose m = -k*m + 136. What is the remainder when g(-8) is divided by m?
+33

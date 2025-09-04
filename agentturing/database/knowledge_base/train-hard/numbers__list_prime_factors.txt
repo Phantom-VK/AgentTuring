@@ -1,0 +1,6 @@
+List the prime factors of 486592985.
+5, 467, 208391
+What are the prime factors of 492858970?
+2, 5, 49285897
+What are the prime factors of 38518203?
+3, 12839401
