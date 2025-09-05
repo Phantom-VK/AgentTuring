@@ -10,7 +10,7 @@ def math_intent_check(text: str) -> bool:
         "matrix","vector","probability","expectation","variance","limit",
         "derivative","integral","gradient","hessian","algebra","geometry",
         "trigonometry","calculus","number theory","combinatorics", "cube", "square", "subtraction",
-        "theory", "concept"
+        "theory", "concept", "arrange", "math", "ways"
     ]
     t = text.lower()
     has_kw = any(k in t for k in math_keywords)

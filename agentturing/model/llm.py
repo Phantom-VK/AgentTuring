@@ -2,10 +2,9 @@ from agentturing.constants import LLM_MODEL
 from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig, pipeline
 import torch, os
 
+
 def get_llm():
-
     os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
-
     print("Inside get_llm")
 
     bnb = BitsAndBytesConfig(
@@ -23,19 +22,18 @@ def get_llm():
         device_map="auto",
         dtype=torch.float16,
         low_cpu_mem_usage=True,
-        
     )
-    return pipeline(
+
+    if tok.pad_token is None:
+        tok.pad_token = tok.eos_token
+
+    pipe = pipeline(
         "text-generation",
         model=mdl,
         tokenizer=tok,
         device_map="auto",
-        dtype=torch.float16,
-        max_new_tokens=512,
-        temperature=0.01,
-        top_k=1,
-        top_p=1.0,
-        do_sample=False,
-        repetition_penalty=1.15,
-        return_full_text=False
+        return_full_text=False,
+        pad_token_id=tok.eos_token_id,
     )
+
+    return pipe, tok

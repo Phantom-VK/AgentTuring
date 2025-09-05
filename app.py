@@ -4,7 +4,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
 
-os.environ["TF_CPP_MIN_LOG_LEVEL"] = "0"
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
 
 from agentturing.guardrails.setup import make_output_guard, make_input_guard
 from agentturing.pipelines.main_pipeline import build_graph
@@ -49,12 +50,10 @@ async def ask_math(request: QueryRequest):
     try:
         state = {"question": validated_question}
         result = GRAPH.invoke(state)
-
-        raw_answer = result["answer"][0]["generated_text"]
-        answer = raw_answer.partition("Answer-step-by-step:")[2].strip() or raw_answer
+        answer =  result['answer']
 
     except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Pipeline error: {str(e.with_traceback)}")
+        raise HTTPException(status_code=500, detail=f"Pipeline error: {str(e)}")
 
     # 3) Output guard
     try:
