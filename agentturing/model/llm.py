@@ -23,6 +23,7 @@ def get_llm():
         device_map="auto",
         dtype=torch.float16,
         low_cpu_mem_usage=True,
+        
     )
     return pipeline(
         "text-generation",
@@ -30,10 +31,11 @@ def get_llm():
         tokenizer=tok,
         device_map="auto",
         dtype=torch.float16,
-        max_new_tokens=312,
+        max_new_tokens=512,
         temperature=0.01,
         top_k=1,
         top_p=1.0,
         do_sample=False,
-        repetition_penalty=1.2,
+        repetition_penalty=1.15,
+        return_full_text=False
     )

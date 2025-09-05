@@ -1,6 +1,8 @@
 import os
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
+
 
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "0"
 
@@ -17,6 +19,13 @@ print("Pipeline ready.")
 # FastAPI setup
 # -------------------------------
 app = FastAPI(title="Math Tutor API", version="1.0")
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:5173"],  # frontend URL
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 class QueryRequest(BaseModel):
     question: str
@@ -42,10 +51,10 @@ async def ask_math(request: QueryRequest):
         result = GRAPH.invoke(state)
 
         raw_answer = result["answer"][0]["generated_text"]
-        answer = raw_answer.partition("Answer101:")[2].strip() or raw_answer
+        answer = raw_answer.partition("Answer-step-by-step:")[2].strip() or raw_answer
 
     except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Pipeline error: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Pipeline error: {str(e.with_traceback)}")
 
     # 3) Output guard
     try:
