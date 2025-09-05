@@ -21,7 +21,8 @@ tavily = TavilySearch(
     max_results=5,
     topic="general",
     tavily_api_key=os.getenv("TAVILY_API_KEY"),
-    include_domains = TAVILY_DOMAINS
+    include_domains = TAVILY_DOMAINS,
+search_depth = "basic"
 )
 
 logging.basicConfig(
@@ -141,9 +142,6 @@ def web_search(state: State):
 
             logging.info(f"Web search completed - added {len(formatted_results)} results")
 
-            # Debug logging to see what we're returning
-            logging.info(f"Updated context type: {type(updated_context)}")
-            logging.info(f"First context entry type: {type(updated_context[0]) if updated_context else 'No context'}")
 
             return {"context": updated_context}
         else:
