@@ -10,7 +10,7 @@ def math_intent_check(text: str) -> bool:
         "matrix","vector","probability","expectation","variance","limit",
         "derivative","integral","gradient","hessian","algebra","geometry",
         "trigonometry","calculus","number theory","combinatorics", "cube", "square", "subtraction",
-        "theory", "concept", "arrange", "math", "ways"
+        "theory", "concept", "arrange", "math", "ways", "formula", "quadratic"
     ]
     t = text.lower()
     has_kw = any(k in t for k in math_keywords)
@@ -28,7 +28,8 @@ def make_input_guard():
     """Create an input guard and return a callable that outputs a string."""
     guard = (
         Guard()
-        .use(ToxicLanguage(threshold=0.7, validation_method="sentence", on_fail=OnFailAction.EXCEPTION))
+        .use(ToxicLanguage(threshold=0.6, validation_method="sentence", on_fail=OnFailAction.EXCEPTION))
+
         .use(DetectPII(pii_entities=["EMAIL_ADDRESS", "PHONE_NUMBER"], on_fail=OnFailAction.FILTER))
     )
 

@@ -1,10 +1,10 @@
 import logging
 import os
-
 from dotenv import load_dotenv
 from langchain_tavily import TavilySearch
 from langgraph.graph import StateGraph, START, END
 
+from agentturing.constants import TAVILY_DOMAINS
 from agentturing.database.schemas import State
 from agentturing.database.vectorstore import get_vectorstore
 from agentturing.model.llm import get_llm
@@ -16,10 +16,12 @@ load_dotenv()
 vectorstore = get_vectorstore()
 llm_pipeline, tokenizer = get_llm()
 
+
 tavily = TavilySearch(
-    max_results=3,
+    max_results=5,
     topic="general",
-    tavily_api_key=os.getenv("TAVILY_API_KEY")
+    tavily_api_key=os.getenv("TAVILY_API_KEY"),
+    include_domains = TAVILY_DOMAINS
 )
 
 logging.basicConfig(
@@ -37,7 +39,6 @@ def generate_with_llm(question, context=""):
     if context:
         system_content += "\n\nContext:\n" + context
 
-    # Format messages using chat template for Qwen
     messages = [
         {"role": "system", "content": system_content},
         {"role": "user", "content": question}
@@ -49,10 +50,9 @@ def generate_with_llm(question, context=""):
         add_generation_prompt=True
     )
 
-    # Generate response with generation parameters
     response = llm_pipeline(
         formatted_prompt,
-        max_new_tokens=400,
+        max_new_tokens=512,
         temperature=0.01,
         top_k=1,
         top_p=1.0,
@@ -61,87 +61,169 @@ def generate_with_llm(question, context=""):
     )
 
     generated_text = response[0]['generated_text'].strip()
-
-    # Post-process to enforce system prompt rules
     return generated_text
 
 
-def generate_initial(state: State):
-    logging.info("Generating initial answer without context")
-    response = generate_with_llm(state["question"])
-    return {"answer": response}
+def retrieve_from_kb(state: State):
+    """Function to search knowledge base for relevant context"""
+    logging.info("Searching knowledge base for relevant context")
 
+    results = vectorstore.similarity_search_with_score(state["question"], k=6)
 
-def check_initial(state: State):
-    answer = state.get("answer", "")
-    if "I don't know" in answer or "Let's search the web" in answer or "not provide" in answer or "not provide" in answer or "I can't assist" in answer:
-        return {"next_step": "retrieve"}
-    return {"next_step": "end"}
+    filtered_docs = []
+    seen_content = set()
+    similarity_threshold = 0.7
 
-
-def retrieve(state: State):
-    logging.info("Searching knowledge base")
-    results = vectorstore.similarity_search_with_score(state["question"])
-    filtered = []
-    seen = set()
-    max_docs = 4
     for doc, score in results:
-        snippet = doc.page_content[:100]
-        if snippet in seen:
+        # Create a snippet for duplicate detection
+        snippet = doc.page_content[:200].strip()
+
+        # Skip duplicates
+        if snippet in seen_content:
             continue
-        if score >= 0.8:
-            filtered.append(doc)
-            seen.add(snippet)
-        if len(filtered) >= max_docs:
-            break
-    return {"context": [doc.page_content for doc in filtered]}
+
+        # Only include docs with good similarity scores
+        if score >= similarity_threshold:
+            filtered_docs.append(doc.page_content)
+            seen_content.add(snippet)
 
 
-def tavily_search(state: State):
-    logging.info("Fallback to Tavily web search")
-    results = tavily.invoke(state["question"])
-    formatted_results = format_tavily_results(results['results'])
-    return {"context": formatted_results}
+    logging.info(f"Retrieved {len(filtered_docs)} relevant documents from knowledge base")
+    return {"context": filtered_docs}
 
 
-def generate(state: State):
-    logging.info("Generating answer with context")
-    docs_content = "\n\n".join(state.get("context", []))
-    response = generate_with_llm(state["question"], docs_content)
+def evaluate_context_sufficiency(state: State):
+    """Function to evaluate if the retrieved context is sufficient to answer the question"""
+    context = state.get("context", [])
+    question = state["question"]
+
+    # Check if we have any context at all
+    if not context or len(context) == 0:
+        logging.info("No context found in knowledge base - routing to web search")
+        return {"next_step": "web_search"}
+
+    # Check context quality and relevance
+    combined_context = "\n".join(context)
+    context_length = len(combined_context.strip())
+
+    if context_length < 50:
+        logging.info("Context too short - routing to web search")
+        return {"next_step": "web_search"}
+
+    # Check if context seems relevant
+    question_words = set(question.lower().split())
+    context_words = set(combined_context.lower().split())
+    overlap = len(question_words.intersection(context_words))
+
+    if overlap < 2:  # Minimal overlap between question and context
+        logging.info("Context not sufficiently relevant - routing to web search")
+        return {"next_step": "web_search"}
+
+    logging.info("Knowledge base context is sufficient - proceeding to generate answer")
+    return {"next_step": "generate_answer"}
+
+
+def web_search(state: State):
+    """Perform web search when knowledge base doesn't have sufficient context"""
+    logging.info("Performing web search using Tavily")
+
+    try:
+        # Perform web search
+        search_results = tavily.invoke(state["question"])
+
+        if search_results and 'results' in search_results:
+            # Format web search results - this now returns List[str]
+            formatted_results = format_tavily_results(search_results['results'])
+
+            # Combine existing context (if any) with web search results
+            existing_context = state.get("context", [])
+            updated_context = existing_context + formatted_results
+
+            logging.info(f"Web search completed - added {len(formatted_results)} results")
+
+            # Debug logging to see what we're returning
+            logging.info(f"Updated context type: {type(updated_context)}")
+            logging.info(f"First context entry type: {type(updated_context[0]) if updated_context else 'No context'}")
+
+            return {"context": updated_context}
+        else:
+            logging.warning("Web search returned no results")
+            return {"context": state.get("context", [])}
+
+    except Exception as e:
+        logging.error(f"Web search failed: {str(e)}")
+        # Return existing context if web search fails
+        return {"context": state.get("context", [])}
+
+
+def generate_final_answer(state: State):
+    """Fuunction to Generate the final answer using available context"""
+    logging.info("Generating final answer with available context")
+
+    context = state.get("context", [])
+    question = state["question"]
+
+    if context:
+        try:
+            # Ensure all context items are strings
+            string_context = []
+            for item in context:
+                if isinstance(item, str):
+                    string_context.append(item)
+                else:
+                    string_context.append(str(item))
+
+            # Combine all context into a single string
+            combined_context = "\n\n".join(string_context)
+
+            logging.info(f"Combined context length: {len(combined_context)}")
+            response = generate_with_llm(question, combined_context)
+
+        except Exception as e:
+            logging.error(f"Error combining context: {str(e)}")
+            response = generate_with_llm(question)
+    else:
+
+        logging.warning("No context available - generating answer without context")
+        response = generate_with_llm(question)
+
     return {"answer": response}
 
 
-
-def route_after_initial(state: State):
-    return state.get("next_step", "end")
-
-def route_after_retrieve(state: State):
-    if not state.get("context"):
-        return "tavily"
-    return "generate"
+def route_after_evaluation(state: State):
+    """Router function to determine next step after context evaluation"""
+    return state.get("next_step", "generate_answer")
 
 
 def build_graph():
-    graph_builder = StateGraph(State)
-    graph_builder.add_node("generate_initial", generate_initial)
-    graph_builder.add_node("check_initial", check_initial)
-    graph_builder.add_node("retrieve", retrieve)
-    graph_builder.add_node("tavily", tavily_search)
-    graph_builder.add_node("generate", generate)
+    """Build and compile the state graph for the RAG + MCP pipeline"""
 
-    graph_builder.add_edge(START, "generate_initial")
-    graph_builder.add_edge("generate_initial", "check_initial")
+    graph_builder = StateGraph(State)
+
+    # Add nodes
+    graph_builder.add_node("retrieve_kb", retrieve_from_kb)
+    graph_builder.add_node("evaluate_context", evaluate_context_sufficiency)
+    graph_builder.add_node("web_search", web_search)
+    graph_builder.add_node("generate_answer", generate_final_answer)
+
+    # Define the flow
+    graph_builder.add_edge(START, "retrieve_kb")
+    graph_builder.add_edge("retrieve_kb", "evaluate_context")
+
+    # Conditional routing after context evaluation
     graph_builder.add_conditional_edges(
-        "check_initial",
-        route_after_initial,
-        {"retrieve": "retrieve", "end": END}
+        "evaluate_context",
+        route_after_evaluation,
+        {
+            "web_search": "web_search",
+            "generate_answer": "generate_answer"
+        }
     )
-    graph_builder.add_conditional_edges(
-        "retrieve",
-        route_after_retrieve,
-        {"tavily": "tavily", "generate": "generate"}
-    )
-    graph_builder.add_edge("tavily", "generate")
-    graph_builder.add_edge("generate", END)
+
+    # After web search, go directly to answer generation
+    graph_builder.add_edge("web_search", "generate_answer")
+
+    # End after generating answer
+    graph_builder.add_edge("generate_answer", END)
 
     return graph_builder.compile()

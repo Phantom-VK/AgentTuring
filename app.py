@@ -3,7 +3,7 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
-
+# Some personal laptop  / environment related settings, can remove
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
 
@@ -16,9 +16,7 @@ INPUT_GUARD = make_input_guard()
 OUTPUT_GUARD = make_output_guard()
 print("Pipeline ready.")
 
-# -------------------------------
 # FastAPI setup
-# -------------------------------
 app = FastAPI(title="Math Tutor API", version="1.0")
 app.add_middleware(
     CORSMiddleware,
