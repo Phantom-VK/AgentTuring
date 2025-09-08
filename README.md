@@ -12,8 +12,7 @@ Built using cutting-edge AI architectures—**LangGraph**, **Qdrant**, and **Tav
 - **Knowledge Base retrieval** with vector search on MetaMathQA and Math-Step-DPO-10K datasets.
 - **Dynamic fallback to Tavily MCP web search** for up-to-date or out-of-knowledge queries.
 - **Input/Output guardrails** to filter toxic content and PII, enforcing math-only queries.
-- **Future-ready Human-in-the-Loop module** planned for continuous human feedback and model improvement.
-- **Beautiful React frontend** with LaTeX and Markdown rendering for rich math display.
+- **React frontend** with LaTeX and Markdown rendering for rich math display.
 - **Fully modular and extensible LangGraph pipeline** orchestrating retrieval, search, and generation.
 
 ---
@@ -23,12 +22,12 @@ Built using cutting-edge AI architectures—**LangGraph**, **Qdrant**, and **Tav
 
 ```
 agentturing/           \# Backend codebase
-├─ constants/        \# API keys, domains, model names
+├─ constants/        \# Model names and required path variables
 ├─ database/         \# KB construction, vectorstore management
-├─ guardrails/       \# Input/output privacy and content safety
+├─ guardrails/       \# Guardrails for Input/output content safety
 ├─ model/            \# LLM and embeddings loader
 ├─ pipelines/        \# LangGraph RAG pipeline definitions
-├─ prompts/          \# System, user and CoT prompt templates
+├─ prompts/          \# System prompt template
 ├─ utils/            \# Helper, output sanitization functions
 
 agentturing-frontend/  \# React frontend with chat UI and rendering
