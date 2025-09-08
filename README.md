@@ -33,6 +33,7 @@ agentturing/           \# Backend codebase
 agentturing-frontend/  \# React frontend with chat UI and rendering
 app.py                 \# FastAPI backend serving API endpoints
 logs/                  \# Runtime and error logs
+.env                   \# API Credentials, not pushed to Github
 save_graph_as_image.py \# Utility to visualize LangGraph pipeline as image
 requirements.txt       \# Python dependencies
 ```
