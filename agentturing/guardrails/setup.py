@@ -1,3 +1,5 @@
+"""Lightweight input and output guard helpers for math-only requests."""
+
 import re
 
 
@@ -8,7 +10,8 @@ def math_intent_check(text: str) -> bool:
         "equation", "inequality", "factor", "simplify", "proof", "theorem",
         "matrix", "vector", "probability", "expectation", "variance", "limit",
         "derivative", "integral", "gradient", "hessian", "algebra", "geometry",
-        "trigonometry", "calculus", "number theory", "combinatorics", "cube", "square", "subtraction",
+        "trigonometry", "calculus", "number theory", "combinatorics",
+        "cube", "square", "subtraction",
         "theory", "concept", "arrange", "math", "ways", "formula", "quadratic",
     ]
     lowered = text.lower()
@@ -58,7 +61,10 @@ def make_output_guard():
     def validate_output(text: str) -> str:
         sanitized = _filter_pii(text.strip())
         if _contains_toxicity(sanitized):
-            return "The generated answer did not meet safety requirements. Please rephrase the question."
+            return (
+                "The generated answer did not meet safety requirements. "
+                "Please rephrase the question."
+            )
         return sanitized
 
     return validate_output

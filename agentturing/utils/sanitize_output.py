@@ -1,3 +1,5 @@
+"""Formatting helpers for external search output and prompt conversion."""
+
 def format_tavily_results(results: list, min_score: float = 0.75) -> list[str]:
     """Convert Tavily results into a readable context string."""
     formatted = []
@@ -22,11 +24,13 @@ def format_tavily_results(results: list, min_score: float = 0.75) -> list[str]:
                 formatted_entry = f"### {title}\n{snippet}\n(Source: {url})"
                 formatted.append(formatted_entry)
 
-        except Exception as e:
-            print(f"Error processing Tavily result: {e}")
+        except (AttributeError, TypeError, ValueError) as exc:
+            print(f"Error processing Tavily result: {exc}")
             continue
 
-    return formatted if formatted else ["No relevant web search results found with sufficient score."]
+    return formatted if formatted else [
+        "No relevant web search results found with sufficient score."
+    ]
 
 
 def get_formatted_prompt(prompt_value):
@@ -46,7 +50,6 @@ def get_formatted_prompt(prompt_value):
         formatted_prompt = f"{system_content}\n\n{user_content}"
         return formatted_prompt
 
-    except Exception as e:
-        print(f"Error formatting prompt: {e}")
+    except (AttributeError, TypeError, ValueError) as exc:
+        print(f"Error formatting prompt: {exc}")
         return str(prompt_value)
-

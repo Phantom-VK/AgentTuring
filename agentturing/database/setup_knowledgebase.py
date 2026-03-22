@@ -1,3 +1,5 @@
+"""Dataset loading and ingestion helpers for the local Qdrant knowledge base."""
+
 from uuid import uuid4
 
 from datasets import load_dataset
@@ -67,6 +69,7 @@ def load_metamath_dataset():
 
 
 def create_chunks(documents, chunk_size=1000, chunk_overlap=200):
+    """Split source documents into smaller chunks before vector ingestion."""
     text_splitter = RecursiveCharacterTextSplitter(
         chunk_size=chunk_size,
         chunk_overlap=chunk_overlap,
@@ -78,6 +81,7 @@ def create_chunks(documents, chunk_size=1000, chunk_overlap=200):
 
 
 def ingest_into_qdrant(documents):
+    """Insert chunked documents into the configured local Qdrant collection."""
     vectorstore = get_vectorstore()
     uuids = [str(uuid4()) for _ in range(len(documents))]
     vectorstore.add_documents(documents=documents, ids=uuids)
@@ -86,6 +90,7 @@ def ingest_into_qdrant(documents):
 
 
 def build_knowledge_base():
+    """Build the local math knowledge base from the configured datasets."""
     print("Inside build_knowledge_base")
     dpo_docs = load_dpo_dataset()
     ds_docs = load_metamath_dataset()

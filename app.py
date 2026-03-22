@@ -1,3 +1,5 @@
+"""FastAPI application exposing agentic math endpoints."""
+
 import json
 import os
 
@@ -26,10 +28,13 @@ app.add_middleware(
 )
 
 class QueryRequest(BaseModel):
+    """Incoming request payload for math questions."""
+
     question: str
 
 @app.post("/ask")
 async def ask_math(request: QueryRequest):
+    """Return a complete answer and captured reasoning for a math prompt."""
     question = request.question.strip()
     if not question:
         raise HTTPException(status_code=400, detail="Question cannot be empty")
@@ -39,8 +44,11 @@ async def ask_math(request: QueryRequest):
         response = await backend.ask(question)
     except ValueError as exc:
         return {
-            "answer": "This assistant only handles mathematics questions. Please provide a math-related query.",
-            "error": f"Input guard triggered: {str(exc)}"
+            "answer": (
+                "This assistant only handles mathematics questions. "
+                "Please provide a math-related query."
+            ),
+            "error": f"Input guard triggered: {str(exc)}",
         }
     except AgenticBackendUnavailable as exc:
         raise HTTPException(status_code=500, detail=str(exc)) from exc
@@ -58,6 +66,7 @@ async def ask_math(request: QueryRequest):
 
 @app.post("/ask/stream")
 async def ask_math_stream(request: QueryRequest):
+    """Stream reasoning and answer chunks as server-sent events."""
     question = request.question.strip()
     if not question:
         raise HTTPException(status_code=400, detail="Question cannot be empty")
@@ -73,7 +82,8 @@ async def ask_math_stream(request: QueryRequest):
                 yield f"data: {json.dumps(event)}\n\n"
         except ValueError as exc:
             yield f"data: {json.dumps({'type': 'error', 'text': str(exc)})}\n\n"
-        except Exception as exc:
-            yield f"data: {json.dumps({'type': 'error', 'text': f'Pipeline error: {str(exc)}'})}\n\n"
+        except Exception as exc:  # pylint: disable=broad-exception-caught
+            error_text = f"Pipeline error: {str(exc)}"
+            yield f"data: {json.dumps({'type': 'error', 'text': error_text})}\n\n"
 
     return StreamingResponse(event_stream(), media_type="text/event-stream")
