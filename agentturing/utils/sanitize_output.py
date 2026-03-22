@@ -1,6 +1,9 @@
 """Formatting helpers for external search output and prompt conversion."""
 
-def format_tavily_results(results: list, min_score: float = 0.75) -> list[str]:
+from typing import Any
+
+
+def format_tavily_results(results: list[Any], min_score: float = 0.75) -> list[str]:
     """Convert Tavily results into a readable context string."""
     formatted = []
 
@@ -8,6 +11,12 @@ def format_tavily_results(results: list, min_score: float = 0.75) -> list[str]:
         return ["No web search results found."]
 
     for r in results:
+        if isinstance(r, str):
+            text = r.strip()
+            if text:
+                formatted.append(text)
+            continue
+
         try:
             score = r.get("score", 0)
             if score >= min_score:

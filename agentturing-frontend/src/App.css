@@ -336,6 +336,85 @@ textarea {
   background: rgba(28, 28, 28, 0.06);
 }
 
+.activity-panel {
+  margin-bottom: 16px;
+  border-radius: 18px;
+  padding: 14px;
+  background: rgba(28, 23, 19, 0.05);
+  border: 1px solid rgba(32, 24, 19, 0.08);
+}
+
+.activity-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(34, 22, 16, 0.68);
+}
+
+.activity-list {
+  display: grid;
+  gap: 10px;
+}
+
+.activity-item {
+  border-radius: 14px;
+  padding: 12px 14px;
+  background: rgba(255, 255, 255, 0.58);
+  border: 1px solid rgba(32, 24, 19, 0.08);
+}
+
+.activity-topline {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+
+.activity-kind,
+.activity-agent {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.activity-kind {
+  color: #8f4c16;
+}
+
+.activity-agent {
+  color: rgba(34, 22, 16, 0.58);
+}
+
+.activity-item p,
+.activity-placeholder {
+  margin: 0;
+  color: rgba(34, 22, 16, 0.78);
+  line-height: 1.5;
+  font-size: 0.92rem;
+}
+
+.activity-item-tool_call {
+  border-left: 4px solid rgba(245, 138, 47, 0.76);
+}
+
+.activity-item-tool_output {
+  border-left: 4px solid rgba(79, 139, 133, 0.76);
+}
+
+.activity-item-handoff {
+  border-left: 4px solid rgba(55, 90, 160, 0.72);
+}
+
+.activity-item-agent {
+  border-left: none;
+}
+
 .message-content {
   line-height: 1.7;
   word-break: break-word;

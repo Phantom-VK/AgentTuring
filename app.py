@@ -76,9 +76,9 @@ async def ask_math_stream(request: QueryRequest):
     except AgenticBackendUnavailable as exc:
         raise HTTPException(status_code=500, detail=str(exc)) from exc
 
-    def event_stream():
+    async def event_stream():
         try:
-            for event in backend.stream_ask(question):
+            async for event in backend.stream_ask(question):
                 yield f"data: {json.dumps(event)}\n\n"
         except ValueError as exc:
             yield f"data: {json.dumps({'type': 'error', 'text': str(exc)})}\n\n"
