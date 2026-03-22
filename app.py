@@ -27,7 +27,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-class QueryRequest(BaseModel):
+class QueryRequest(BaseModel):  # pylint: disable=too-few-public-methods
     """Incoming request payload for math questions."""
 
     question: str
