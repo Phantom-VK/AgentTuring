@@ -285,16 +285,25 @@ class AgenticMathBackend:
         return await asyncio.to_thread(self._ask_sync, question)
 
     def stream_ask(self, question: str) -> Generator[dict[str, Any], None, None]:
-        """Yield trace, reasoning, answer, and completion events for SSE clients."""
-        validated_question = self._input_guard(question)
-        context, last_agent_name = self._gather_context(validated_question)
+        """Yield SSE events without blocking on the research phase first.
 
+        The synchronous `/ask` path keeps the full route -> research -> solve flow.
+        For streaming, we prefer immediate token delivery, so this path sends the
+        prompt straight to the reasoner and forwards deltas as soon as they arrive.
+        """
+        validated_question = self._input_guard(question)
         reasoning_chunks: list[str] = []
         answer_chunks: list[str] = []
 
-        yield {"type": "meta", "backend": self.backend_name, "research_used": bool(context)}
+        yield {
+            "type": "meta",
+            "backend": self.backend_name,
+            "model": self.settings.solver_model,
+            "research_used": False,
+            "last_agent": "SolverAgent",
+        }
 
-        for event in self._stream_reasoner(validated_question, context):
+        for event in self._stream_reasoner(validated_question, context=""):
             if event["type"] == "reason":
                 reasoning_chunks.append(event["text"])
             elif event["type"] == "answer":
@@ -308,8 +317,8 @@ class AgenticMathBackend:
             "answer": final_answer,
             "reasoning": final_reasoning,
             "metadata": {
-                "last_agent": last_agent_name,
+                "last_agent": "SolverAgent",
                 "model": self.settings.solver_model,
-                "research_used": bool(context),
+                "research_used": False,
             },
         }

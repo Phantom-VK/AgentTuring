@@ -86,4 +86,12 @@ async def ask_math_stream(request: QueryRequest):
             error_text = f"Pipeline error: {str(exc)}"
             yield f"data: {json.dumps({'type': 'error', 'text': error_text})}\n\n"
 
-    return StreamingResponse(event_stream(), media_type="text/event-stream")
+    return StreamingResponse(
+        event_stream(),
+        media_type="text/event-stream",
+        headers={
+            "Cache-Control": "no-cache",
+            "Connection": "keep-alive",
+            "X-Accel-Buffering": "no",
+        },
+    )

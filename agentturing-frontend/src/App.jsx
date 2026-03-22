@@ -197,7 +197,9 @@ function App() {
               trace: {
                 ...message.trace,
                 backend: streamEvent.backend || message.trace.backend,
+                model: streamEvent.model || message.trace.model,
                 researchUsed: streamEvent.research_used,
+                lastAgent: streamEvent.last_agent || message.trace.lastAgent,
               },
             }));
             continue;
