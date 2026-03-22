@@ -8,19 +8,22 @@ import "./App.css";
 
 const API_BASE = import.meta.env.VITE_API_URL || "http://localhost:8000";
 const STREAM_ENDPOINT = `${API_BASE}/ask/stream`;
+const RESEARCH_AGENTS = new Set(["MathResearchAgent", "WebResearchAgent"]);
 
 const assistantWelcome = {
   id: "welcome",
   role: "assistant",
-  text: "Ask a math question and I will stream the answer, show the solver's reasoning trail, and surface the runtime traces.",
+  text: "Ask a math question and I will stream the answer, show the solver's reasoning trail, and expose live agent handoffs plus tool activity.",
   reasoning: "",
   trace: {
     backend: "agentic",
     model: "deepseek-reasoner",
     researchUsed: false,
+    lastAgent: "SolverAgent",
   },
   status: "done",
   isReasoningOpen: false,
+  activities: [],
 };
 
 function formatMathContent(text) {
@@ -73,9 +76,11 @@ function createAssistantMessage(id) {
       backend: "",
       model: "",
       researchUsed: null,
+      lastAgent: "",
     },
     status: "streaming",
     isReasoningOpen: true,
+    activities: [],
   };
 }
 
@@ -143,6 +148,19 @@ function App() {
     );
   };
 
+  const appendActivity = (id, activity) => {
+    updateAssistantMessage(id, (message) => ({
+      ...message,
+      activities: [
+        ...message.activities,
+        {
+          id: activity.id || `${activity.kind}-${message.activities.length}-${Date.now()}`,
+          ...activity,
+        },
+      ],
+    }));
+  };
+
   const askQuestion = async (event) => {
     event.preventDefault();
     if (!question.trim() || isLoading) {
@@ -202,6 +220,78 @@ function App() {
                 lastAgent: streamEvent.last_agent || message.trace.lastAgent,
               },
             }));
+            continue;
+          }
+
+          if (streamEvent.type === "agent") {
+            updateAssistantMessage(assistantId, (message) => ({
+              ...message,
+              trace: {
+                ...message.trace,
+                lastAgent: streamEvent.name || message.trace.lastAgent,
+              },
+            }));
+            appendActivity(assistantId, {
+              kind: "agent",
+              label: "Agent Active",
+              text: streamEvent.name,
+            });
+            continue;
+          }
+
+          if (streamEvent.type === "handoff") {
+            updateAssistantMessage(assistantId, (message) => ({
+              ...message,
+              trace: {
+                ...message.trace,
+                lastAgent: streamEvent.to_agent || message.trace.lastAgent,
+                researchUsed:
+                  RESEARCH_AGENTS.has(streamEvent.to_agent)
+                    ? true
+                    : message.trace.researchUsed,
+              },
+            }));
+            appendActivity(assistantId, {
+              kind: "handoff",
+              label: "Handoff",
+              text: `${streamEvent.from_agent} -> ${streamEvent.to_agent}`,
+            });
+            continue;
+          }
+
+          if (streamEvent.type === "tool_call") {
+            updateAssistantMessage(assistantId, (message) => ({
+              ...message,
+              trace: {
+                ...message.trace,
+                researchUsed: true,
+              },
+            }));
+            appendActivity(assistantId, {
+              id: streamEvent.call_id,
+              kind: "tool_call",
+              label: streamEvent.tool_name,
+              text: streamEvent.arguments || "No arguments provided.",
+              agent: streamEvent.agent,
+            });
+            continue;
+          }
+
+          if (streamEvent.type === "tool_output") {
+            updateAssistantMessage(assistantId, (message) => ({
+              ...message,
+              trace: {
+                ...message.trace,
+                researchUsed: true,
+              },
+            }));
+            appendActivity(assistantId, {
+              id: streamEvent.call_id ? `${streamEvent.call_id}-output` : undefined,
+              kind: "tool_output",
+              label: `${streamEvent.tool_name} output`,
+              text: streamEvent.text,
+              agent: streamEvent.agent,
+            });
             continue;
           }
 
@@ -360,6 +450,37 @@ function App() {
                         accent={message.trace?.researchUsed ? "active" : "default"}
                       />
                       <TracePill label="Last Agent" value={message.trace?.lastAgent} accent="neutral" />
+                    </div>
+                  )}
+
+                  {message.role === "assistant" && (
+                    <div className="activity-panel">
+                      <div className="activity-header">
+                        <span>Runtime Trace</span>
+                        <span>{message.activities?.length || 0} events</span>
+                      </div>
+                      {message.activities?.length ? (
+                        <div className="activity-list">
+                          {message.activities.map((activity) => (
+                            <div
+                              key={activity.id}
+                              className={`activity-item activity-item-${activity.kind}`}
+                            >
+                              <div className="activity-topline">
+                                <span className="activity-kind">{activity.label}</span>
+                                {activity.agent ? (
+                                  <span className="activity-agent">{activity.agent}</span>
+                                ) : null}
+                              </div>
+                              <p>{activity.text}</p>
+                            </div>
+                          ))}
+                        </div>
+                      ) : (
+                        <p className="activity-placeholder">
+                          Tool calls and handoffs will appear here when the agent needs them.
+                        </p>
+                      )}
                     </div>
                   )}
 
