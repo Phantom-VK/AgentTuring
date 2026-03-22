@@ -1,3 +1,7 @@
+"""Agentic backend built on OpenAI Agents SDK and DeepSeek chat completions."""
+
+# pylint: disable=import-outside-toplevel
+
 import asyncio
 from dataclasses import dataclass
 from functools import lru_cache
@@ -12,11 +16,13 @@ from .base import BackendResponse
 
 
 class AgenticBackendUnavailable(RuntimeError):
-    pass
+    """Raised when agentic dependencies or provider settings are unavailable."""
 
 
 @dataclass
 class RuntimeBundle:
+    """Runtime objects needed to execute agent routing and research."""
+
     runner: Any
     triage_agent: Any
     research_agent: Any
@@ -25,6 +31,7 @@ class RuntimeBundle:
 
 @lru_cache(maxsize=1)
 def _get_vectorstore():
+    """Lazily load the vector store to avoid heavy startup imports."""
     from agentturing.database.vectorstore import get_vectorstore
 
     return get_vectorstore()
@@ -32,6 +39,7 @@ def _get_vectorstore():
 
 @lru_cache(maxsize=8)
 def _get_tavily_client(api_key: str):
+    """Create and cache the Tavily client used by the research tool."""
     from langchain_tavily import TavilySearch
 
     return TavilySearch(
@@ -45,12 +53,15 @@ def _get_tavily_client(api_key: str):
 
 @lru_cache(maxsize=4)
 def _get_openai_client(api_key: str, base_url: str):
+    """Create and cache the OpenAI-compatible client for DeepSeek requests."""
     from openai import OpenAI
 
     return OpenAI(api_key=api_key, base_url=base_url)
 
 
 class AgenticMathBackend:
+    """Backend implementation that routes, researches, and solves math questions."""
+
     backend_name = "agentic"
 
     def __init__(self, settings: Settings) -> None:
@@ -59,7 +70,8 @@ class AgenticMathBackend:
         self._output_guard = make_output_guard()
         self._runtime = self._build_runtime()
 
-    def _build_runtime(self) -> RuntimeBundle:
+    def _build_runtime(self) -> RuntimeBundle:  # pylint: disable=too-many-locals
+        """Build the agent routing runtime and its tool-backed research agent."""
         if not self.settings.agentic_enabled:
             raise AgenticBackendUnavailable(
                 "Agentic backend requires DEEPSEEK_API_KEY and DEEPSEEK_BASE_URL."
@@ -77,21 +89,25 @@ class AgenticMathBackend:
             )
         except ImportError as exc:
             raise AgenticBackendUnavailable(
-                "Agentic backend dependencies are missing. Run `uv sync` to install pyproject dependencies."
+                "Agentic backend dependencies are missing. "
+                "Run `uv sync` to install pyproject dependencies."
             ) from exc
 
         set_tracing_disabled(self.settings.tracing_disabled)
 
         @function_tool
         def search_knowledge_base(query: str, top_k: int = 4) -> str:
-            """Search the local math knowledge base for solution steps, definitions, and worked examples.
+            """Search the local math knowledge base for worked examples.
 
             Args:
                 query: The math query or concept to search for.
                 top_k: Number of candidate matches to fetch from Qdrant.
             """
             vectorstore = _get_vectorstore()
-            results = vectorstore.similarity_search_with_score(query, k=max(1, min(top_k, 8)))
+            results = vectorstore.similarity_search_with_score(
+                query,
+                k=max(1, min(top_k, 8)),
+            )
 
             if not results:
                 return "No relevant knowledge base entries were found."
@@ -106,7 +122,7 @@ class AgenticMathBackend:
 
         @function_tool
         def web_search(query: str) -> str:
-            """Search curated math-oriented web sources when the local knowledge base is insufficient.
+            """Search curated math-oriented web sources when local retrieval is insufficient.
 
             Args:
                 query: The math question or research query to search for.
@@ -123,11 +139,15 @@ class AgenticMathBackend:
 
         research_agent = Agent(
             name="ResearchAgent",
-            handoff_description="Uses retrieval and web search tools to gather context for the final DeepSeek reasoner.",
+            handoff_description=(
+                "Uses retrieval and web search tools to gather context "
+                "for the final DeepSeek reasoner."
+            ),
             instructions=(
-                "You are a math research specialist. Use the available tools to gather the most relevant "
-                "context for the user's question. Return a concise research brief with only the facts, "
-                "examples, and retrieved snippets that will help a separate math solver answer correctly. "
+                "You are a math research specialist. Use the available tools to gather "
+                "the most relevant context for the user's question. Return a concise "
+                "research brief with only the facts, examples, and retrieved snippets "
+                "that will help a separate math solver answer correctly. "
                 "Do not produce the final answer unless the user only asked for factual lookup."
             ),
             model=self.settings.research_model,
@@ -139,9 +159,11 @@ class AgenticMathBackend:
             name="TriageAgent",
             instructions=(
                 "You route mathematical requests. "
-                "If the problem can be answered directly without retrieval or external context, "
+                "If the problem can be answered directly without retrieval "
+                "or external context, "
                 "respond exactly with NO_RESEARCH_NEEDED. "
-                "If it needs retrieval, examples, or external reference material, handoff to ResearchAgent. "
+                "If it needs retrieval, examples, or external reference material, "
+                "handoff to ResearchAgent. "
                 "Do not answer non-mathematical requests."
             ),
             model=self.settings.triage_model,
@@ -167,6 +189,7 @@ class AgenticMathBackend:
         )
 
     def _gather_context(self, question: str) -> tuple[str, str | None]:
+        """Run the routing layer and return either context text or an empty string."""
         result = self._runtime.runner.run_sync(
             self._runtime.triage_agent,
             question,
@@ -182,9 +205,11 @@ class AgenticMathBackend:
         return output, last_agent_name
 
     def _build_reasoner_messages(self, question: str, context: str) -> list[dict[str, str]]:
+        """Build the final solver prompt for the DeepSeek reasoner model."""
         system_prompt = (
             "You are an expert mathematics tutor. "
-            "Solve the user's problem carefully and provide a clear step-by-step explanation. "
+            "Solve the user's problem carefully and provide a clear "
+            "step-by-step explanation. "
             "If context is provided, use it only when relevant. "
             "End with `Final Answer:` followed by the result."
         )
@@ -197,7 +222,12 @@ class AgenticMathBackend:
             {"role": "user", "content": user_prompt},
         ]
 
-    def _stream_reasoner(self, question: str, context: str) -> Generator[dict[str, str], None, None]:
+    def _stream_reasoner(
+        self,
+        question: str,
+        context: str,
+    ) -> Generator[dict[str, str], None, None]:
+        """Stream reasoning and answer tokens from the DeepSeek reasoner model."""
         client = _get_openai_client(
             api_key=self.settings.provider_api_key or "",
             base_url=self.settings.provider_base_url or "",
@@ -224,6 +254,7 @@ class AgenticMathBackend:
                 yield {"type": "answer", "text": answer_text}
 
     def _ask_sync(self, question: str) -> BackendResponse:
+        """Resolve a complete answer by routing first, then streaming the final solve."""
         validated_question = self._input_guard(question)
         context, last_agent_name = self._gather_context(validated_question)
 
@@ -250,9 +281,11 @@ class AgenticMathBackend:
         )
 
     async def ask(self, question: str) -> BackendResponse:
+        """Run the blocking solve flow in a worker thread for FastAPI."""
         return await asyncio.to_thread(self._ask_sync, question)
 
     def stream_ask(self, question: str) -> Generator[dict[str, Any], None, None]:
+        """Yield trace, reasoning, answer, and completion events for SSE clients."""
         validated_question = self._input_guard(question)
         context, last_agent_name = self._gather_context(validated_question)
 

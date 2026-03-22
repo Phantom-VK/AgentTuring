@@ -1,3 +1,5 @@
+"""Shared constants for embeddings, Qdrant, and Tavily configuration."""
+
 EMBEDDING_MODEL_NAME = "all-MiniLM-L6-v2"
 COLLECTION_NAME = "math_combined"
 QDRANT_PATH = "agentturing/database/qdrantdb"

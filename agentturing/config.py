@@ -1,3 +1,5 @@
+"""Environment-driven backend configuration."""
+
 import os
 from dataclasses import dataclass
 from functools import lru_cache
@@ -25,7 +27,10 @@ def _get_float(name: str, default: float) -> float:
 
 
 @dataclass(frozen=True)
+# pylint: disable=too-many-instance-attributes
 class Settings:
+    """Runtime settings loaded from environment variables."""
+
     cors_origins: tuple[str, ...]
     provider_api_key: str | None
     provider_base_url: str | None
@@ -39,11 +44,13 @@ class Settings:
 
     @property
     def agentic_enabled(self) -> bool:
+        """Return whether provider credentials are present for agent execution."""
         return bool(self.provider_api_key and self.provider_base_url)
 
 
 @lru_cache(maxsize=1)
 def get_settings() -> Settings:
+    """Load and cache backend settings from the current environment."""
     cors_origins = tuple(
         origin.strip()
         for origin in os.getenv("CORS_ORIGINS", "http://localhost:5173").split(",")

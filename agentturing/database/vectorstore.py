@@ -1,3 +1,5 @@
+"""Helpers for managing the local Qdrant vector store."""
+
 from langchain_qdrant import QdrantVectorStore
 from qdrant_client import QdrantClient
 
@@ -8,32 +10,31 @@ from agentturing.model.embeddings import get_embedder
 
 
 def get_qdrant_client():
+    """Create a local filesystem-backed Qdrant client."""
     print("Connecting to QDrant")
     return QdrantClient(path=QDRANT_PATH)
 
+
 def get_vectorstore(embedder=None, client=None):
+    """Create or open the configured Qdrant collection for math retrieval."""
     if embedder is None:
         embedder = get_embedder()
     if client is None:
         client = get_qdrant_client()
     print("Creating vectorstore")
 
-    # Ensure collection exists with correct vector size
     embed_dim = len(embedder.embed_query("dimension check"))
-    try:
-        client.get_collection(collection_name=COLLECTION_NAME)
-    except Exception:
-        client.collection_exists(
+    if not client.collection_exists(collection_name=COLLECTION_NAME):
+        client.recreate_collection(
             collection_name=COLLECTION_NAME,
             vectors_config=qmodels.VectorParams(
                 size=embed_dim,
-                distance=qmodels.Distance.COSINE
+                distance=qmodels.Distance.COSINE,
             ),
         )
 
     return QdrantVectorStore(
         client=client,
         embedding=embedder,
-        collection_name=COLLECTION_NAME
+        collection_name=COLLECTION_NAME,
     )
-
