@@ -3,10 +3,12 @@ import axios from "axios";
 import ReactMarkdown from "react-markdown";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
+import rehypeRaw from "rehype-raw";
 import "katex/dist/katex.min.css";
 import "./App.css"; // Import our CSS file
 
 function App() {
+  const API_BASE = import.meta.env.VITE_API_URL || "http://localhost:8000";
   const formatMathContent = (text) => {
   // Better LaTeX delimiter handling
   return text
@@ -55,7 +57,7 @@ function App() {
     setMessages((prev) => [...prev, loadingMessage]);
 
     try {
-      const res = await axios.post("http://localhost:8000/ask", {
+      const res = await axios.post(`${API_BASE}/ask`, {
         question: userQuestion,
       });
 
@@ -167,7 +169,7 @@ function App() {
                     <div className="message-content">
   <ReactMarkdown
     remarkPlugins={[remarkMath]}
-    rehypePlugins={[rehypeKatex]}
+    rehypePlugins={[rehypeRaw, rehypeKatex]}
     components={{
       p: ({ children }) => {
         const content = String(children);
