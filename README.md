@@ -1,19 +1,18 @@
 
-# AgentTuring Math Tutor 🤖📐
+# AgentTuring Math Tutor
 
-An AI-powered **mathematics tutoring assistant** combining **Retrieval-Augmented Generation (RAG)** with **Model Context Protocol (MCP)** web search.  
-Built using cutting-edge AI architectures—**LangGraph**, **Qdrant**, and **Tavily MCP**—with strong privacy and safety guardrails.
+An AI-powered mathematics tutor built around the OpenAI Agents SDK, a DeepSeek OpenAI-compatible backend, local Qdrant retrieval, and Tavily-backed web search.
 
 ---
 
 ## 🚀 Features
 
-- **Step-by-step mathematical problem solving** using Qwen 2.5 LLM fine-tuned for math instructions.
+- **Agentic math tutoring** with explicit tools and handoffs.
 - **Knowledge Base retrieval** with vector search on MetaMathQA and Math-Step-DPO-10K datasets.
-- **Dynamic fallback to Tavily MCP web search** for up-to-date or out-of-knowledge queries.
-- **Input/Output guardrails** to filter toxic content and PII, enforcing math-only queries.
+- **Dynamic Tavily web search** for out-of-knowledge queries.
+- **Input/Output guards** to filter toxic content and PII, enforcing math-only queries.
 - **React frontend** with LaTeX and Markdown rendering for rich math display.
-- **Fully modular and extensible LangGraph pipeline** orchestrating retrieval, search, and generation.
+- **DeepSeek via OpenAI-compatible `base_url`** with agent orchestration handled in the backend.
 
 ---
 
@@ -22,24 +21,20 @@ Built using cutting-edge AI architectures—**LangGraph**, **Qdrant**, and **Tav
 
 ```
 agentturing/           \# Backend codebase
-├─ constants/        \# Model names and required path variables
-├─ database/         \# KB construction, vectorstore management
-├─ guardrails/       \# Guardrails for Input/output content safety
-├─ model/            \# LLM and embeddings loader
-├─ pipelines/        \# LangGraph RAG pipeline definitions
-├─ prompts/          \# System prompt template
-├─ utils/            \# Helper, output sanitization functions
+├─ config.py         \# Environment-driven backend settings
+├─ constants/        \# Shared constants for embeddings, Qdrant, Tavily domains
+├─ database/         \# KB construction and vector store management
+├─ guardrails/       \# Input/output safety checks
+├─ model/            \# Embedding model loader
+├─ services/         \# Agent runtime, tools, and request handling
+├─ utils/            \# Helper and search-output formatting
 
 agentturing-frontend/  \# React frontend with chat UI and rendering
 app.py                 \# FastAPI backend serving API endpoints
 logs/                  \# Runtime and error logs
 .env                   \# API Credentials, not pushed to Github
-save_graph_as_image.py \# Utility to visualize LangGraph pipeline as image
-requirements.txt       \# Python dependencies
+uv.lock                \# uv lockfile for Python dependencies
 ```
-
-## Workflow Graph
-![Pipeline Graph](pipeline_graph.png)
 
 ---
 
@@ -53,59 +48,64 @@ cd agentturing
 
 ```
 
-2. Create & activate virtual environment:
+2. Sync dependencies with `uv`:
 ```
 
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
+uv sync
 
 ```
 
 3. Configure environment variables in `.env`:
 ```
 
+DEEPSEEK_API_KEY=your_deepseek_api_key
+DEEPSEEK_BASE_URL=https://api.deepseek.com
+OPENAI_DEFAULT_MODEL=deepseek-chat
+AGENT_TRIAGE_MODEL=deepseek-chat
+AGENT_SOLVER_MODEL=deepseek-reasoner
+AGENT_RESEARCH_MODEL=deepseek-chat
 TAVILY_API_KEY=your_tavily_api_key
-OTHER_API_KEYS=...
 
 ```
 
-4. Ingest datasets into Qdrant KB:
+4. Ingest datasets into the local Qdrant knowledge base:
 ```
 
-from agentturing.database.setup_knowledgebase import build_knowledge_base
-build_knowledge_base()
+uv run python -m agentturing.database.setup_knowledgebase
 
 ```
 
 5. Run the FastAPI backend:
 ```
 
-uvicorn app:app --reload
+uv run uvicorn app:app --reload
 
 ```
 
 6. Start React frontend:
 ```
 
-cd ../agentturing-frontend
+cd agentturing-frontend
 npm install
 npm run dev
 
 ```
 
+Notes:
+- The backend now supports an agentic runtime using the OpenAI Agents SDK with a DeepSeek OpenAI-compatible `base_url` and API key.
+- Tavily is optional, but required if you want the web-search tool available in the agentic backend.
+- Qdrant is local in this repo, so no Qdrant API key is required unless you later switch to a hosted Qdrant deployment.
+
 ---
 
 ## ⚙️ How It Works
 
-1. User types math question in frontend → sent to backend.  
-2. Backend validates input for safety & math intent.  
-3. Initial LLM generation tries direct answer without context.  
-4. If uncertain, KB retrieval for relevant context is performed.  
-5. If KB can’t help, Tavily MCP web search supplements context.  
-6. Final generation combines context to deliver step-by-step answers.  
-7. Output guardrails ensure safety and privacy before response.  
-8. UI renders results with math and markdown beautifully.
+1. User types a math question in the frontend and sends it to the FastAPI backend.  
+2. The backend validates scope and sanitizes obvious PII.  
+3. A triage agent decides whether the question can go directly to solving or needs tool-assisted research.  
+4. The research agent can use local Qdrant retrieval and Tavily web search.  
+5. The solver agent produces the final step-by-step answer.  
+6. Output safety checks run before the answer is returned to the UI.
 
 ---
 
@@ -136,7 +136,4 @@ Feedback welcome!
 ---
 
 ⭐ If you find this project useful, please give it a star!
-
-
-
 

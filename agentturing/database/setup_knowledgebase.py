@@ -1,8 +1,9 @@
 from uuid import uuid4
 
 from datasets import load_dataset
-from langchain.schema import Document
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_core.documents import Document
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+
 from agentturing.database.vectorstore import get_vectorstore
 
 
@@ -62,7 +63,7 @@ def load_metamath_dataset():
         )
         mathqa_documents.append(doc)
 
-        return mathqa_documents
+    return mathqa_documents
 
 
 def create_chunks(documents, chunk_size=1000, chunk_overlap=200):
@@ -94,3 +95,6 @@ def build_knowledge_base():
 
     vectorstore = ingest_into_qdrant(chunks)
     return vectorstore
+
+if __name__ == "__main__":
+    vectorstore_op = build_knowledge_base()

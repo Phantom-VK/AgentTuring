@@ -1,3 +1,7 @@
 /.idea
 /.env
+/.venv/
 /agentturing/database/qdrantdb/
+/ProjectUpgradePlan
+/logs/
+__pycache__/

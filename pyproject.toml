@@ -1,0 +1,33 @@
+[project]
+name = "agentturing"
+version = "0.1.0"
+description = "Agentic math tutoring backend and frontend"
+requires-python = ">=3.12"
+dependencies = [
+    "datasets",
+    "fastapi",
+    "langchain-core",
+    "langchain-huggingface",
+    "langchain-qdrant",
+    "langchain-tavily",
+    "langchain-text-splitters",
+    "openai",
+    "openai-agents",
+    "pydantic",
+    "python-dotenv",
+    "qdrant-client",
+    "sentence-transformers",
+    "torch",
+    "transformers",
+    "uvicorn",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "ruff",
+]
