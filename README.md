@@ -1,5 +1,7 @@
 
 # AgentTuring Math Tutor
+<img width="1858" height="896" alt="Screenshot from 2026-03-22 16-46-26" src="https://github.com/user-attachments/assets/6acd4e20-cdf8-403d-978f-52a72e07b436" />
+
 
 An AI-powered mathematics tutor built around the OpenAI Agents SDK, a DeepSeek OpenAI-compatible backend, local Qdrant retrieval, and Tavily-backed web search.
 
